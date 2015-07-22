@@ -1,0 +1,8 @@
+<h1><%= @trip.name %></h1>
+
+Trip members:
+<ul>
+  <% @trip.users.each do |user| %>
+    <li><%= user.username %></li>
+  <% end %>
+</ul>

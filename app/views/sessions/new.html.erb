@@ -1,19 +1,17 @@
 <%= form_tag do %>
   <fieldset>
     <legend>Please Log In</legend>
-    <div>
+    <p>
       <%= label_tag :username, 'Username:' %>
       <%= text_field_tag :username, params[:username] %>
-    </div>
-
-    <div>
+    </p>
+    <p>
       <%= label_tag :password, 'Password:' %>
       <%= password_field_tag :password, params[:password] %>
-    </div>
-
-    <div>
+    </p>
+    <p>
       <%= submit_tag "Login" %>
-    </div>
+    </p>
   </fieldset>
 <% end %>
 
