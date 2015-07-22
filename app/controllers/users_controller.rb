@@ -14,12 +14,12 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
-    redirect_to root_path, notice: "Success! Created user #{@user.username}."
+    redirect_to root_path, notice: "Success! Created user #{@user.name}."
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:username, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 end

@@ -1,4 +1,4 @@
-<p>Hi, <%= @user.username %>!</p>
+<p>Hi, <%= @user.name %>!</p>
 <p><%= link_to "My Trips", user_trips_path(@user) %></p>
 <p><%= button_to "New Trip", new_user_trip_path(@user), method: :get %></p>
 <p><%= button_to "Log Out", logout_path, method: :delete %></p>
