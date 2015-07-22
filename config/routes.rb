@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
 
-  root 'users#index'
+  devise_for :users
+  root 'trips#index'
 
-  resources :users do
-    resources :trips
-  end
+  resources :trips
 
   controller :sessions do
     get    'login'  => :new

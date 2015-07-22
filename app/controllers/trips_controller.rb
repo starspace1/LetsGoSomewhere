@@ -1,17 +1,14 @@
 class TripsController < ApplicationController
   def index
-    @user = User.find(params[:user_id])
-    @trips = @user.trips
+    @trips = current_user.trips
   end
 
   def new
-    @user = User.find(params[:user_id])
-    @trip = @user.trips.new
+    @trip = current_user.trips.new
   end
 
   def create
-    @user = User.find(params[:user_id])
-    @trip = @user.trips.create(trip_params)
+    @trip = current_user.trips.create(trip_params)
     redirect_to root_path, notice: "Success! Created new trip #{@trip.name}."
   end
 
