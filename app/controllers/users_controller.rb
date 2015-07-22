@@ -14,6 +14,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
+    redirect_to root_path, notice: "Success! Created user #{@user.username}."
   end
 
   private

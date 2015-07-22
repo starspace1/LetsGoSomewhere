@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   root 'users#index'
 
-  resources :users
+  resources :users do
+    resources :trips
+  end
 
   controller :sessions do
     get    'login'  => :new

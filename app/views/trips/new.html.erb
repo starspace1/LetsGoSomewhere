@@ -1,0 +1,11 @@
+<h1>Create New Trip</h1>
+
+<%= form_for([@user, @trip]) do |f| %>
+  <p>
+    <%= f.label :name, "Trip Name:" %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
