@@ -22,7 +22,8 @@ class TripsController < ApplicationController
 
   def send_invite
     @trip = Trip.find(params[:trip_id])
-    User.invite!({:email => params[:email]}, current_user)
+    @user = User.invite!({:email => params[:email]}, current_user)
+    @user.trips << @trip
     redirect_to trip_path(@trip), notice: "Success! Invited #{params[:email]} to trip."
   end
 
