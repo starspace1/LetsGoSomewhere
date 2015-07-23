@@ -1,0 +1,6 @@
+<h1>Trips for <%= current_user.email %></h1>
+<ul>
+  <%= render @trips %> 
+</ul>
+
+<%= link_to "New Trip", new_trip_path %>

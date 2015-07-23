@@ -1,0 +1,13 @@
+<h1><%= @trip.name %></h1>
+
+Trip members:
+<ul>
+  <% @trip.users.each do |user| %>
+    <% unless user.invitation_token %>
+      <li><%= user.email %></li>
+    <% end %>
+  <% end %>
+</ul>
+
+<p><%= link_to "Invite a friend!", trip_invite_path(@trip) %></p>
+<p><%= link_to "Leave trip", trip_leave_path(@trip) %></p>

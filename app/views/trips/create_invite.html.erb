@@ -1,0 +1,12 @@
+<%= form_tag(trip_invite_path(@trip), method: :post) do %>
+  <fieldset>
+    <legend>Enter friend's email</legend>
+    <div>
+      <%= label_tag :email, 'Email:' %>
+      <%= text_field_tag :email, params[:email] %>
+    </div>
+    <div>
+      <%= submit_tag "Send" %>
+    </div>
+  </fieldset>
+<% end %>
