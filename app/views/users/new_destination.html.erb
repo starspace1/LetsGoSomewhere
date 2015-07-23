@@ -1,0 +1,9 @@
+<h2>Add Destinations</h2>
+<%= form_tag(create_destination_path(@user), method: :post) do %>
+  <div>
+    <%= collection_check_boxes(:user, :destination_ids, Destination.all, :id, :city) %>
+  </div>
+  <div>
+    <%= submit_tag "Add" %>
+  </div>
+<% end %>

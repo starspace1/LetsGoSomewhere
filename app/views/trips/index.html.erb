@@ -1,6 +1,15 @@
-<h1>Trips for <%= current_user.email %></h1>
+<h1>My Trips</h1>
 <ul>
   <%= render @trips %> 
 </ul>
 
 <%= link_to "New Trip", new_trip_path %>
+
+<h1>My Destinations</h1>
+<ul>
+  <% current_user.destinations.each do |destination| %>
+    <li><%=  destination.city %>, <%=  destination.country %></li>
+  <% end %>
+</ul>
+<%= link_to "Add a Destination", new_destination_path(current_user) %>
+
