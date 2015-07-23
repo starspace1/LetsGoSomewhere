@@ -27,6 +27,12 @@ class TripsController < ApplicationController
     redirect_to trip_path(@trip), notice: "Success! Invited #{params[:email]} to trip."
   end
 
+  def leave
+    @trip = Trip.find(params[:trip_id])
+    current_user.trips.delete(@trip)
+    redirect_to root_path, notice: "You left trip #{@trip.name}."
+  end
+
   private 
   
   def trip_params

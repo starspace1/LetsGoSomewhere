@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :trips do
     get 'invite' => :create_invite
     post 'invite' => :send_invite
+    get 'leave' => :leave
   end
 
   controller :sessions do
