@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150722205836) do
+ActiveRecord::Schema.define(version: 20150723165107) do
+
+  create_table "destinations", force: :cascade do |t|
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.string   "region"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "groups", force: :cascade do |t|
     t.integer  "user_id"
@@ -22,6 +31,16 @@ ActiveRecord::Schema.define(version: 20150722205836) do
 
   add_index "groups", ["trip_id"], name: "index_groups_on_trip_id"
   add_index "groups", ["user_id"], name: "index_groups_on_user_id"
+
+  create_table "interests", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "destination_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "interests", ["destination_id"], name: "index_interests_on_destination_id"
+  add_index "interests", ["user_id"], name: "index_interests_on_user_id"
 
   create_table "trips", force: :cascade do |t|
     t.string   "name"
