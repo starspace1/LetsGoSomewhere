@@ -1,7 +1,14 @@
 <h2>Add Destinations</h2>
 <%= form_tag(create_destination_path(@user), method: :post) do %>
+  <!-- TODO: generalize regions, show countries -->
   <div>
-    <%= collection_check_boxes(:user, :destination_ids, Destination.all, :id, :city) %>
+    North America: <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: "North America"), :id, :city) %>
+  </div>
+  <div>
+    South America: <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: "South America"), :id, :city) %>
+  </div>
+  <div>
+    Europe: <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: "Europe"), :id, :city) %>
   </div>
   <div>
     <%= submit_tag "Add" %>
