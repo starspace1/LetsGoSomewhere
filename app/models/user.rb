@@ -4,5 +4,7 @@ class User < ActiveRecord::Base
   devise :invitable, :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :groups
-  has_many :trips, :through => :groups
+  has_many :trips, through: :groups
+  has_many :interests
+  has_many :destinations, through: :interests
 end

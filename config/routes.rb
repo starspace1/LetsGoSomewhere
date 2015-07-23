@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   devise_for :users
   root 'trips#index'
 
+  get 'users/:id/new_destination' => 'users#new_destination', as: :new_destination
+  post 'users/:id/create_destination' => 'users#create_destination', as: :create_destination
+
+
   resources :trips do
     get 'invite' => :create_invite
     post 'invite' => :send_invite
