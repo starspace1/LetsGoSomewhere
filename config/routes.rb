@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   devise_for :users
   root 'trips#index'
 
-  resources :trips
+  resources :trips do
+    get 'invite' => :create_invite
+    post 'invite' => :send_invite
+  end
 
   controller :sessions do
     get    'login'  => :new
