@@ -3,9 +3,10 @@ Rails.application.routes.draw do
   devise_for :users
   root 'trips#index'
 
-  get 'users/:id/destination' => 'users#edit_destinations', as: :edit_destinations
-  post 'users/:id/destination' => 'users#update_destinations', as: :update_destinations
-
+  get 'users/:id/destinations' => 'users#edit_destinations', as: :edit_destinations
+  post 'users/:id/destinations' => 'users#update_destinations', as: :update_destinations
+  get 'users/:id/dates' => 'users#edit_dates', as: :edit_dates
+  post 'users/:id/dates' => 'users#update_dates', as: :update_dates
 
   resources :trips do
     get 'invite' => :create_invite

@@ -18,10 +18,23 @@
 
 $(document).ready(function() {
 
-    // page is now ready, initialize the calendar...
+  $('#calendar').fullCalendar();
 
-    $('#calendar').fullCalendar({
-        // put your options and callbacks here
-    })
+  $('.fc-day').click(function() {
+
+    console.log($(this).attr("data-date") )
+
+    $(this).toggleClass('busy-day');
+
+    if ($(this).hasClass('busy-day')) 
+    { 
+      $(this).css('background-color', 'red');
+    }
+    else
+    {
+      $(this).css('background-color', 'white');
+    }
+    
+  });
 
 });
