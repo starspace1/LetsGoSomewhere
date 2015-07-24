@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'users/:id/destinations' => 'users#edit_destinations', as: :edit_destinations
   post 'users/:id/destinations' => 'users#update_destinations', as: :update_destinations
   get 'dates' => 'users#edit_dates', as: :edit_dates
-  post 'dates' => 'users#update_dates', as: :update_dates
+  post 'dates/update' => 'users#update_date', as: :update_date
 
   resources :trips do
     get 'invite' => :create_invite

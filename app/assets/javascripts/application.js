@@ -19,24 +19,24 @@
 $(document).ready(function() {
 
   $('#calendar').fullCalendar({
-    events: '/dates.json'
-  });
 
-  $('.fc-day').click(function() {
+    events: '/dates.json',
 
-    console.log($(this).attr("data-date") )
+    dayClick: function(date, jsEvent, view) {
 
-    $(this).toggleClass('busy-day');
+      $(this).toggleClass('busy-day');
 
-    if ($(this).hasClass('busy-day')) 
-    { 
-      $(this).css('background-color', 'red');
+      if ($(this).hasClass('busy-day')) 
+      { 
+        $(this).css('background-color', 'red');
+        $.post( "/dates/update", { date: date.format() } );
+      }
+      else
+      {
+        $(this).css('background-color', 'white');
+        // TODO remove this from the busy intervals for this user
+      } 
     }
-    else
-    {
-      $(this).css('background-color', 'white');
-    }
-    
   });
 
 });

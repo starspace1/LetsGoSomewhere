@@ -12,8 +12,8 @@ class UsersController < ApplicationController
   def edit_dates
     @user = current_user
   end
-
-  def update_dates
-
+  
+  def update_date
+    @user = current_user
   end
 end
