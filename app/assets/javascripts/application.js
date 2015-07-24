@@ -18,7 +18,9 @@
 
 $(document).ready(function() {
 
-  $('#calendar').fullCalendar();
+  $('#calendar').fullCalendar({
+    events: '/dates.json'
+  });
 
   $('.fc-day').click(function() {
 

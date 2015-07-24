@@ -7,4 +7,5 @@ class User < ActiveRecord::Base
   has_many :trips, through: :groups
   has_many :interests
   has_many :destinations, through: :interests
+  has_many :busy_intervals
 end
