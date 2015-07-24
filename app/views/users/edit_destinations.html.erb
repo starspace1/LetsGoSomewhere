@@ -1,5 +1,5 @@
-<h2>Add Destinations</h2>
-<%= form_tag(create_destination_path(@user), method: :post) do %>
+<h2>Update Destinations</h2>
+<%= form_tag(update_destinations_path(@user), method: :post) do %>
   <!-- TODO: generalize regions, show countries -->
   <div>
     North America: <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: "North America"), :id, :city) %>
@@ -11,6 +11,6 @@
     Europe: <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: "Europe"), :id, :city) %>
   </div>
   <div>
-    <%= submit_tag "Add" %>
+    <%= submit_tag "Update" %>
   </div>
 <% end %>

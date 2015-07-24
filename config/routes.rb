@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   devise_for :users
   root 'trips#index'
 
-  get 'users/:id/new_destination' => 'users#new_destination', as: :new_destination
-  post 'users/:id/create_destination' => 'users#create_destination', as: :create_destination
+  get 'users/:id/destination' => 'users#edit_destinations', as: :edit_destinations
+  post 'users/:id/destination' => 'users#update_destinations', as: :update_destinations
 
 
   resources :trips do

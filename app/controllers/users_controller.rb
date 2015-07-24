@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
-  def new_destination
+  def edit_destinations
     @user = User.find(params[:id])  
   end
 
-  def create_destination
+  def update_destinations
     @user = User.find(params[:id]) 
     @user.update(params.require(:user).permit(:destination_ids => []))
     redirect_to root_path
