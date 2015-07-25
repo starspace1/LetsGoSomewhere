@@ -20,6 +20,7 @@ class UsersController < ApplicationController
 
   def remove_date
     @id = params[:id]
-    current_user.busy_intervals.find(@id).destroy
+    @can_remove = current_user.busy_intervals.exists?(@id)
+    current_user.busy_intervals.find(@id).destroy if @can_remove
   end
 end
