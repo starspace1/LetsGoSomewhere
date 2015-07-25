@@ -28,6 +28,13 @@ $(document).on('ready page:load', function() {
       $.post( "/dates/update", { date: date.format() } );
 
     }
+
   });
+
+  $( ".fc-day" ).each(function() {
+    date = $(this).attr("data-date");
+    console.log(date);
+    // TODO if user is busy on this day, $(this).css('background-color', 'red');
+   });
 
 });
