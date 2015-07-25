@@ -13,8 +13,13 @@ class UsersController < ApplicationController
     @user = current_user
   end
   
-  def update_date
+  def add_date
     @date = params[:date]
-    current_user.mark_as_busy(@date)
+    @busy_interval = current_user.mark_as_busy(@date)
+  end
+
+  def remove_date
+    @id = params[:id]
+    current_user.busy_intervals.find(@id).destroy
   end
 end

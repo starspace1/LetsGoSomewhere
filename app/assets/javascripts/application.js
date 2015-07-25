@@ -24,9 +24,13 @@ $(document).on('ready page:load', function() {
     events: '/dates.json',
 
     dayClick: function(date, jsEvent, view) {
+      console.log("dayClick")
+      $.post( "/dates/add", { date: date.format() } );
+    },
 
-      $.post( "/dates/update", { date: date.format() } );
-
+    eventClick: function(calEvent, jsEvent, view) {
+      console.log("eventClick" +  calEvent.id)
+      $.post( "/dates/remove", { id: calEvent.id } );
     }
 
   });
