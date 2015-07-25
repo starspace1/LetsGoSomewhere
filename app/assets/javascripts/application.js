@@ -21,7 +21,7 @@ $(document).on('ready page:load', function() {
 
   $('#calendar').fullCalendar({
 
-    //events: '/dates.json',
+    events: '/dates.json',
 
     dayClick: function(date, jsEvent, view) {
 
@@ -30,11 +30,5 @@ $(document).on('ready page:load', function() {
     }
 
   });
-
-  $( ".fc-day" ).each(function() {
-    date = $(this).attr("data-date");
-    console.log(date);
-    // TODO if user is busy on this day, $(this).css('background-color', 'red');
-   });
 
 });

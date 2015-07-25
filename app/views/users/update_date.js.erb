@@ -1,1 +1,12 @@
-$( ".fc-day[data-date=<%= @date %>]" ).css('background-color', 'red');
+console.log("update_date.js.erb")
+
+$('#calendar').fullCalendar('renderEvent', {
+                        id: 999,
+                        title: 'Busy Time Test',
+                        start: <%= @date %>,
+                        end: <%= @date %>,
+                        allDay: true,
+                        rendering: "background",
+                        color: "red",
+                        backgroundColor: "red"
+                    }, false );
