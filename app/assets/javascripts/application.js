@@ -16,26 +16,17 @@
 //= require_tree .
 //= require fullcalendar
 
-$(document).ready(function() {
+
+$(document).on('ready page:load', function() {
 
   $('#calendar').fullCalendar({
 
-    events: '/dates.json',
+    //events: '/dates.json',
 
     dayClick: function(date, jsEvent, view) {
 
-      $(this).toggleClass('busy-day');
+      $.post( "/dates/update", { date: date.format() } );
 
-      if ($(this).hasClass('busy-day')) 
-      { 
-        $(this).css('background-color', 'red');
-        $.post( "/dates/update", { date: date.format() } );
-      }
-      else
-      {
-        $(this).css('background-color', 'white');
-        // TODO remove this from the busy intervals for this user
-      } 
     }
   });
 

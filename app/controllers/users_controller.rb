@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   end
   
   def update_date
-    @user = current_user
+    @date = params[:date]
+    current_user.mark_as_busy(@date)
   end
 end

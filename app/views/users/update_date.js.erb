@@ -1,1 +1,1 @@
-<% @user.busy_intervals.create(start_time: DateTime.iso8601(params[:date]), end_time: DateTime.iso8601(params[:date])) %>
+$( ".fc-day[data-date=<%= @date %>]" ).css('background-color', 'red');
