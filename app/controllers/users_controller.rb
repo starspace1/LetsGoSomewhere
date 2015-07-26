@@ -1,11 +1,26 @@
 class UsersController < ApplicationController
-  def new_destination
-    @user = User.find(params[:id])  
+  def edit_destinations
+    @user = current_user
   end
 
-  def create_destination
-    @user = User.find(params[:id]) 
+  def update_destinations
+    @user = current_user
     @user.update(params.require(:user).permit(:destination_ids => []))
     redirect_to root_path
+  end
+
+  def edit_dates
+    @user = current_user
+  end
+  
+  def add_date
+    @date = params[:date]
+    @busy_interval = current_user.mark_as_busy(@date)
+  end
+
+  def remove_date
+    @id = params[:id]
+    @can_remove = current_user.busy_intervals.exists?(@id)
+    current_user.busy_intervals.find(@id).destroy if @can_remove
   end
 end

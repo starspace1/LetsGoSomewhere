@@ -1,0 +1,3 @@
+<% if @can_remove %>
+  $('#calendar').fullCalendar( 'removeEvents', [<%= @id %>] )
+<% end %>

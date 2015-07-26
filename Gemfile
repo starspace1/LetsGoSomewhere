@@ -48,3 +48,7 @@ end
 
 gem 'dotenv-rails', :groups => [:development, :test]
 
+gem 'fullcalendar-rails'
+
+gem 'quiet_assets', group: :development
+

@@ -1,0 +1,13 @@
+<% if @busy_interval %>
+console.log("Created event " + "<%= @busy_interval.id %>")
+  $('#calendar').fullCalendar('renderEvent', {
+                          id: <%= @busy_interval.id %>,
+                          title: 'Busy',
+                          start: "<%= @date %>",
+                          end: "<%= @date %>",
+                          allDay: true,
+                          rendering: "background",
+                          color: "red",
+                          backgroundColor: "red"
+                      }, false );
+<% end %>

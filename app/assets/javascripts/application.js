@@ -14,3 +14,23 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require fullcalendar
+
+
+$(document).on('ready page:load', function() {
+
+  $('#calendar').fullCalendar({
+
+    events: '/dates.json',
+
+    dayClick: function(date, jsEvent, view) {
+      $.post( "/dates/add", { date: date.format() } );
+    },
+
+    eventClick: function(calEvent, jsEvent, view) {
+      $.post( "/dates/remove", { id: calEvent.id } );
+    }
+
+  });
+
+});
