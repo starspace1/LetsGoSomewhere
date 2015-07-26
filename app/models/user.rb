@@ -10,24 +10,21 @@ class User < ActiveRecord::Base
   has_many :busy_intervals
 
   def mark_as_busy date
-    # If any contain this date, do nothing
-    return if busy_on? date
+    # TODO clean up this mess
     # Look through existing busy intervals for this user
     busy_intervals.each do |interval|
-      # If any are adjacent to this date, 
-      if interval.adjacent_to? DateTime.iso8601(date)
+      # If this interval contains date, do nothing
+      if interval.contains? date
+        return false
+      end 
+      # If interval is adjacent to date, 
+      if interval.adjacent_to? date
         # Edit that interval, make this date the new start or end date for the interval
-        interval.extend_interval DateTime.iso8601(date)
+        interval.extend_interval date
+        return interval 
       end
     end
-    busy_intervals.create(start_time: DateTime.iso8601(date), end_time: DateTime.iso8601(date)) unless busy_on? date
+    return busy_intervals.create(start_time: date, end_time: date + 1)
   end
 
-  def mark_as_free date
-    busy_intervals.where("start_time = ? and end_time = ?", DateTime.iso8601(date), DateTime.iso8601(date)).destroy_all
-  end
-
-  def busy_on? date
-    busy_intervals.where("start_time = ? or end_time = ?", DateTime.iso8601(date), DateTime.iso8601(date)).any?
-  end
 end
