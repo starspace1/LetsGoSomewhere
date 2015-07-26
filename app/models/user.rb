@@ -23,6 +23,7 @@ class User < ActiveRecord::Base
         interval.extend_interval date
         return interval 
       end
+      # TODO account for when the user picks a date adjacent to TWO existing busy intervals
     end
     return busy_intervals.create(start_time: date, end_time: date + 1)
   end
