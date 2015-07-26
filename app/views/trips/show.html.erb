@@ -9,6 +9,13 @@ Trip members:
   <% end %>
 </ul>
 
+Potential Destinations:
+<ul>
+  <% @trip.destination_ids.each do |id| %>
+    <li><%= Destination.find(id) %></li>
+  <% end %>
+</ul>
+
 <p><%= link_to "Invite a friend!", trip_invite_path(@trip) %></p>
 <p><%= link_to "Leave trip", trip_leave_path(@trip) %></p>
 <p><%= link_to "Home", root_path %></p>
