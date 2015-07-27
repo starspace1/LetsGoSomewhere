@@ -13,8 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require bootstrap-sprockets
 //= require fullcalendar
+//= require_tree .
 
 
 $(document).on('ready page:load', function() {
