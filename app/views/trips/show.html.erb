@@ -16,6 +16,13 @@ Potential Destinations:
   <% end %>
 </ul>
 
+Free Dates in July:
+<ul>
+  <% @trip.free_dates(Date.new(2015,7,1), Date.new(2015,7,31)).each do |date| %>
+    <li><%= date %></li>
+  <% end %>
+</ul>
+
 <p><%= link_to "Invite a friend!", trip_invite_path(@trip) %></p>
 <p><%= link_to "Leave trip", trip_leave_path(@trip) %></p>
 <p><%= link_to "Home", root_path %></p>

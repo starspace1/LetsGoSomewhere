@@ -14,8 +14,8 @@
 ActiveRecord::Schema.define(version: 20150724172333) do
 
   create_table "busy_intervals", force: :cascade do |t|
-    t.datetime "start_time"
-    t.datetime "end_time"
+    t.date     "start_date"
+    t.date     "end_date"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

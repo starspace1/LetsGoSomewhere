@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   end
   
   def add_date
-    @date = params[:date]
+    @date = DateTime.iso8601(params[:date])
     @busy_interval = current_user.mark_as_busy(@date)
   end
 
