@@ -1,17 +1,17 @@
-<h1>My Trips</h1>
+<h3>My Trips</h3>
 <ul>
   <%= render @trips %> 
 </ul>
 
 <%= link_to "New Trip", new_trip_path %>
 
-<h1>My Destinations</h1>
+<h3>My Destinations</h3>
 <ul>
   <% current_user.destinations.each do |destination| %>
     <li><%=  destination.city %>, <%=  destination.country %></li>
   <% end %>
 </ul>
-<%= link_to "Update Destinations", edit_destinations_path(current_user) %>
+<%= link_to "Update Destinations", edit_destinations_path(current_user) %> <br>
 <%= link_to "Update Dates", edit_dates_path %>
 
 
