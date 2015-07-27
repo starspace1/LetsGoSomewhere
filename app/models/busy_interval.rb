@@ -19,4 +19,33 @@ class BusyInterval < ActiveRecord::Base
      update_attribute(:end_time, date + 1)
     end
   end
+
+  def to_s
+    "#{start_time} to #{end_time}"
+  end
+
+  def self.merged_intervals
+    sorted_intervals = self.order(:start_time).to_a
+    merged_intervals = []
+    merged_intervals.unshift(sorted_intervals.shift)
+    sorted_intervals.each do |interval|
+      # Get the interval with the earliest start time
+      top = merged_intervals.first()
+      if top.end_time < interval.start_time
+        # This interval isn't overlapping with top
+        # Add to merged intervals
+        merged_intervals.unshift(interval)
+      elsif top.end_time < interval.end_time
+        # This interval is overlapping with top
+        # Update the end_time of top 
+        top.end_time = interval.end_time
+        merged_intervals.shift
+        merged_intervals.unshift(top)
+      end
+    end
+    puts merged_intervals.reverse
+    # Return the array of merged intervals 
+    # Reverse it so it's sorted by start date
+    merged_intervals.reverse!
+  end
 end
