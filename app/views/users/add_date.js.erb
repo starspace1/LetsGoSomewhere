@@ -9,8 +9,8 @@
   $('#calendar').fullCalendar('renderEvent', {
                           id: <%= @busy_interval.id %>,
                           title: 'Busy',
-                          start: "<%= @busy_interval.start_time %>",
-                          end: "<%= @busy_interval.end_time %>",
+                          start: "<%= @busy_interval.start_date %>",
+                          end: "<%= @busy_interval.end_date %>",
                           allDay: true,
                           rendering: "background",
                           color: "red",

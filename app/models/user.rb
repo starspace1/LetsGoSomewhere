@@ -25,7 +25,7 @@ class User < ActiveRecord::Base
       end
       # TODO account for when the user picks a date adjacent to TWO existing busy intervals
     end
-    return busy_intervals.create(start_time: date, end_time: date + 1)
+    return busy_intervals.create(start_date: date, end_date: date + 1)
   end
 
 end

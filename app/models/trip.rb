@@ -18,7 +18,7 @@ class Trip < ActiveRecord::Base
     busy_interval_array =  BusyInterval.where(user_id: user_ids).to_a
     # For each busy interval, create a set from the range
     busy_set_array = busy_interval_array.map do |interval|
-      Range.new(interval.start_time.to_date, interval.end_time.to_date).to_set
+      Range.new(interval.start_date, interval.end_date).to_set
     end
     # Combine all the sets together to get all busy dates for all users on trip
     busy_set = busy_set_array.inject { |result, element| result | element }
