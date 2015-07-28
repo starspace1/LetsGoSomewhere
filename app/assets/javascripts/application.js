@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require fullcalendar
+//= require bootstrap-datepicker
 //= require_tree .
 
 
@@ -32,6 +33,11 @@ $(document).on('ready page:load', function() {
       $.post( "/dates/remove", { id: calEvent.id } );
     }
 
+  });
+
+  $('#my_datepicker .input-daterange').datepicker({
+    autoclose: true,
+    todayHighlight: true
   });
 
 });

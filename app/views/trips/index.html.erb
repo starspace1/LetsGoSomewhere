@@ -1,17 +1,28 @@
-<h3>My Trips</h3>
-<ul>
-  <%= render @trips %> 
-</ul>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4">
+      <h3>My Trips</h3>
+      <ul>
+        <%= render @trips %> 
+      </ul>
+      <%= link_to "New Trip", new_trip_path %>
+    </div>
+    <div class="col-xs-4">
+      <h3>My Destinations</h3>
+      <ul>
+        <% current_user.destinations.each do |destination| %>
+        <li><%=  destination.city %>, <%=  destination.country %></li>
+        <% end %>
+      </ul>
+      <%= link_to "Update Destinations", edit_destinations_path(current_user) %> <br>
+    </div>
+    <div class="col-xs-4">
+      <h3>My Busy Dates</h3>
+      <img src="http://placehold.it/200x200"> <br>
+      <%= link_to "Update Dates", edit_dates_path %>
+    </div>
+  </div>
+</div>
 
-<%= link_to "New Trip", new_trip_path %>
-
-<h3>My Destinations</h3>
-<ul>
-  <% current_user.destinations.each do |destination| %>
-    <li><%=  destination.city %>, <%=  destination.country %></li>
-  <% end %>
-</ul>
-<%= link_to "Update Destinations", edit_destinations_path(current_user) %> <br>
-<%= link_to "Update Dates", edit_dates_path %>
 
 
