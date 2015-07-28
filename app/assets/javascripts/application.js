@@ -44,7 +44,8 @@ $(document).on('ready page:load', function() {
     $('.datepicker').datepicker({
     autoclose: true,
     todayHighlight: true,
-    format: "yyyy-m-d"
+    format: "yyyy-m-d",
+    orientation: "top"
   });
 
 });
