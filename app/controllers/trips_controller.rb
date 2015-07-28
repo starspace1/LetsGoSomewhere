@@ -10,6 +10,7 @@ class TripsController < ApplicationController
   def create
     @trip = current_user.trips.create(trip_params)
     redirect_to root_path, notice: "Success! Created new trip #{@trip.name}."
+    # TODO redirect to the newly created trip page
   end
 
   def show
@@ -33,9 +34,15 @@ class TripsController < ApplicationController
     redirect_to root_path, notice: "You left trip #{@trip.name}."
   end
 
+  def update_date_constraints
+    @trip = Trip.find(params[:trip_id])
+    @trip.update(start_date: params[:start_date], end_date: params[:end_date])
+    redirect_to trip_path(@trip)
+  end
+
   private 
   
   def trip_params
-    params.require(:trip).permit(:name)
+    params.require(:trip).permit(:name, :start_date, :end_date)
   end
 end

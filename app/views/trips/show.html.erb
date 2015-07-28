@@ -16,23 +16,23 @@ Potential Destinations:
   <% end %>
 </ul>
 
-<%= form_tag('/') do %>
+<!-- TODO make this calendar automatically jump to end date when you select start date -->
+<%= form_tag(trip_update_date_constraints_path(@trip)) do %>
   <div class="form-group">
     <container id="my_datepicker">
       <div class="input-daterange input-group" id="datepicker">
-        <input type="text" class="input-sm form-control" name="start_date" />
+        <input type="text" class="input-sm form-control" name="start_date" value=<%= @trip.start_date %> />
         <span class="input-group-addon">to</span>
-        <input type="text" class="input-sm form-control" name="end_date" />
+        <input type="text" class="input-sm form-control" name="end_date" value=<%= @trip.end_date %> />
       </div>
       <button type="submit" class="btn btn-default">Update</button>
     </container>
   </div>
 <% end %>
 
-
-Free Dates in July:
+Free Dates:
 <ul>
-  <% @trip.free_dates(Date.new(2015,7,1), Date.new(2015,7,31)).each do |date| %>
+  <% @trip.free_dates.each do |date| %>
     <li><%= date %></li>
   <% end %>
 </ul>

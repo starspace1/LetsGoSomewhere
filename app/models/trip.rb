@@ -3,6 +3,8 @@ class Trip < ActiveRecord::Base
   has_many :groups
   has_many :users, through: :groups
 
+  # TODO add validation, start_date < end_date etc
+
   def destination_ids
     # TODO make less C++ish
     user_dests = []
@@ -12,7 +14,7 @@ class Trip < ActiveRecord::Base
     user_dests.inject { |result, element| result & element }
   end
 
-  def free_dates(start_date, end_date)
+  def free_dates
     # Merge all busy intervals for all users on this trip
     # TODO there's probably a better query
     busy_interval_array =  BusyInterval.where(user_id: user_ids).to_a

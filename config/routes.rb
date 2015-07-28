@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get 'invite' => :create_invite
     post 'invite' => :send_invite
     get 'leave' => :leave
+    post 'update_date_constraints' => :update_date_constraints
   end
 
   controller :sessions do

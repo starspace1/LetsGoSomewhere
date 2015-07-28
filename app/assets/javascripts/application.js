@@ -37,7 +37,14 @@ $(document).on('ready page:load', function() {
 
   $('#my_datepicker .input-daterange').datepicker({
     autoclose: true,
-    todayHighlight: true
+    todayHighlight: true,
+    format: "yyyy-m-d"
+  });
+
+    $('.datepicker').datepicker({
+    autoclose: true,
+    todayHighlight: true,
+    format: "yyyy-m-d"
   });
 
 });
