@@ -1,16 +1,28 @@
 <h2>Update Destinations</h2>
 <%= form_tag(update_destinations_path(@user), method: :post) do %>
   <!-- TODO: generalize regions, show countries -->
-  <div>
-    North America: <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: "North America"), :id, :city) %>
-  </div>
-  <div>
-    South America: <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: "South America"), :id, :city) %>
-  </div>
-  <div>
-    Europe: <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: "Europe"), :id, :city) %>
-  </div>
-  <div>
-    <%= submit_tag "Update" %>
-  </div>
+  North America:
+  <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: "North America"), :id, :city) do |b| %>
+    <%= b.label(class: "checkbox-inline") do %>
+      <%= b.check_box() %> <%= b.object.city %>
+    <% end %>
+  <% end %>
+
+  <br> South America:
+  <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: "South America"), :id, :city) do |b| %>
+    <%= b.label(class: "checkbox-inline") do %>
+      <%= b.check_box() %> <%= b.object.city %>
+    <% end %>
+  <% end %>
+
+  <br> Europe:
+  <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: "Europe"), :id, :city) do |b| %>
+    <%= b.label(class: "checkbox-inline") do %>
+      <%= b.check_box() %> <%= b.object.city %>
+    <% end %>
+  <% end %>
+  
+  <br><%= submit_tag "Update" , class: "btn btn-default"%>
+  
 <% end %>
+
