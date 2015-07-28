@@ -9,8 +9,7 @@ class TripsController < ApplicationController
 
   def create
     @trip = current_user.trips.create(trip_params)
-    redirect_to root_path, notice: "Success! Created new trip #{@trip.name}."
-    # TODO redirect to the newly created trip page
+    redirect_to trip_path(@trip), notice: "Success! Created new trip #{@trip.name}."
   end
 
   def show

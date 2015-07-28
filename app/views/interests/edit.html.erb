@@ -1,5 +1,5 @@
 <h2>Update Destinations</h2>
-<%= form_tag(update_destinations_path(@user), method: :post) do %>
+<%= form_tag(interests_update_path, method: :post) do %>
   <!-- TODO: generalize regions, show countries -->
   North America:
   <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: "North America"), :id, :city) do |b| %>

@@ -3,11 +3,10 @@ Rails.application.routes.draw do
   devise_for :users
   root 'trips#index'
 
-  get 'users/:id/destinations' => 'users#edit_destinations', as: :edit_destinations
-  post 'users/:id/destinations' => 'users#update_destinations', as: :update_destinations
-  get 'dates' => 'users#edit_dates', as: :edit_dates
-  post 'dates/add' => 'users#add_date'
-  post 'dates/remove' => 'users#remove_date'
+  resources :busy_intervals
+
+  get 'interests/edit'
+  post 'interests/update'
 
   resources :trips do
     get 'invite' => :create_invite

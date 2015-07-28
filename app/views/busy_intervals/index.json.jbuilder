@@ -1,4 +1,4 @@
-json.array!(@user.busy_intervals) do |interval|
+json.array!(@busy_intervals) do |interval|
   json.extract! interval, :id
   json.title "Busy"
   json.start interval.start_date

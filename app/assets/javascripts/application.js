@@ -23,14 +23,14 @@ $(document).on('ready page:load', function() {
 
   $('#calendar').fullCalendar({
 
-    events: '/dates.json',
+    events: '/busy_intervals.json',
 
     dayClick: function(date, jsEvent, view) {
-      $.post( "/dates/add", { date: date.format() } );
+      $.post( "/busy_intervals", { date: date.format() } );
     },
 
     eventClick: function(calEvent, jsEvent, view) {
-      $.post( "/dates/remove", { id: calEvent.id } );
+      $.ajax({ url: "/busy_intervals/"+calEvent.id, type: 'DELETE' } );
     }
 
   });
