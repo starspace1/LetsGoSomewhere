@@ -3,9 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'trips#index'
 
-  get 'dates' => 'users#edit_dates', as: :edit_dates
-  post 'dates/add' => 'users#add_date'
-  post 'dates/remove' => 'users#remove_date'
+  resources :busy_intervals
 
   get 'interests/edit'
   post 'interests/update'
