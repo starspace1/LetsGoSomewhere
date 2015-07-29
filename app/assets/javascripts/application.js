@@ -51,8 +51,14 @@ $(document).on('ready page:load', function() {
   if( $('#free_calendar').length > 0 )
   {
     $('#free_calendar').fullCalendar({
-
       events: $('#free_calendar_url').attr('value')
+    }); 
+  }
+
+  if( $('#user_calendar').length > 0 )
+  {
+    $('#user_calendar').fullCalendar({
+      events: $('#user_calendar_url').attr('value')
     }); 
   }
   

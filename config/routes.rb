@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   resources :busy_intervals, only: [:index, :create, :edit, :destroy]
 
+  resources :users, only: [:show]
+
   get 'interests/edit'
   post 'interests/update'
 
