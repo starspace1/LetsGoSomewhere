@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'trips#index'
 
-  resources :busy_intervals
+  resources :busy_intervals, only: [:index, :create, :edit, :destroy]
 
   get 'interests/edit'
   post 'interests/update'

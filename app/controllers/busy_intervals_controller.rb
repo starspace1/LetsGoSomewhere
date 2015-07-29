@@ -1,16 +1,15 @@
 class BusyIntervalsController < ApplicationController
-
   def index
     @busy_intervals = current_user.busy_intervals
   end
 
-  def edit
-    @user = current_user
-  end
-  
   def create
     @date = DateTime.iso8601(params[:date])
     @busy_interval = current_user.mark_as_busy(@date)
+  end
+
+  def edit
+    @user = current_user
   end
 
   def destroy
