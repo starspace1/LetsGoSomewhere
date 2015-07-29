@@ -1,21 +1,30 @@
-<h1><%= @trip.name %></h1>
 
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1><%= @trip.name %></h1>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="container">
 <div class="row">
   <div class="col-xs-4">
     <h4>Trip members:</h4>
-    <ul>
+    <ul class="list-group">
       <% @trip.users.each do |user| %>
         <% unless user.invitation_token %>
-          <li><%= link_to user.email, user_path(user) %></li>
+          <li class="list-group-item"><%= link_to user.email, user_path(user) %></li>
         <% end %>
       <% end %>
     </ul>
     <p><%= link_to "Invite a friend!", trip_invite_path(@trip), class: "btn btn-default btn-sm" %></p>
 
     <h4>Potential Destinations:</h4>
-    <ul>
+    <ul class="list-group">
       <% @trip.destination_ids.each do |id| %>
-        <li><%= Destination.find(id) %></li>
+        <li class="list-group-item"><%= Destination.find(id) %></li>
       <% end %>
     </ul>
 
@@ -43,4 +52,5 @@
     <% end %>
 
   </div>
+</div>
 </div>
