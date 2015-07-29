@@ -1,41 +1,56 @@
-<h1><%= @trip.name %></h1>
 
-Trip members:
-<ul>
-  <% @trip.users.each do |user| %>
-    <% unless user.invitation_token %>
-      <li><%= link_to user.email, user_path(user) %></li>
-    <% end %>
-  <% end %>
-</ul>
-
-Potential Destinations:
-<ul>
-  <% @trip.destination_ids.each do |id| %>
-    <li><%= Destination.find(id) %></li>
-  <% end %>
-</ul>
-
-<!-- TODO make this calendar automatically jump to end date when you select start date -->
-<%= form_tag(trip_update_date_constraints_path(@trip)) do %>
-  <div class="form-group">
-    <container id="my_datepicker">
-      <div class="input-daterange input-group" id="datepicker">
-        <input type="text" class="input-sm form-control" name="start_date" value=<%= @trip.start_date %> />
-        <span class="input-group-addon">to</span>
-        <input type="text" class="input-sm form-control" name="end_date" value=<%= @trip.end_date %> />
-      </div>
-      <button type="submit" class="btn btn-default">Update</button>
-    </container>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1><%= @trip.name %></h1>
+      <hr>
+    </div>
   </div>
-<% end %>
+</div>
 
-Free Dates:
-<div id='free_calendar'></div>
-<div id='free_calendar_url' value="<%= trip_path(@trip)%>.json"></div>
+<div class="container">
+<div class="row">
+  <div class="col-sm-4">
+    <h4>Trip members:</h4>
+    <ul class="list-group">
+      <% @trip.users.each do |user| %>
+        <% unless user.invitation_token %>
+          <li class="list-group-item"><%= link_to user.email, user_path(user) %></li>
+        <% end %>
+      <% end %>
+    </ul>
+    <p><%= link_to "Invite a friend!", trip_invite_path(@trip), class: "btn btn-default btn" %></p>
 
-<p><%= link_to "Invite a friend!", trip_invite_path(@trip) %></p>
-<p><%= link_to "Leave trip", trip_leave_path(@trip), data: {confirm: "Are you sure?"} %></p>
-<p><%= link_to "Home", root_path %></p>
+    <h4>Potential Destinations:</h4>
+    <ul class="list-group">
+      <% @trip.destination_ids.each do |id| %>
+        <li class="list-group-item"><%= Destination.find(id) %></li>
+      <% end %>
+    </ul>
 
+    <p><%= link_to "Leave trip", trip_leave_path(@trip), data: {confirm: "Are you sure?"}, class: "btn btn-default btn" %></p>
+  </div>
 
+  <div class="col-sm-8">
+    <h4>Free Dates:</h4>
+    <div id='free_calendar'></div>
+    <div id='free_calendar_url' value="<%= trip_path(@trip)%>.json"></div>
+    <br>
+    <p>Trip will be sometime between:</p>
+    <!-- TODO make this calendar automatically jump to end date when you select start date -->
+    <%= form_tag(trip_update_date_constraints_path(@trip)) do %>
+      <div class="form-group">
+        <container id="my_datepicker">
+          <div class="input-daterange input-group" id="datepicker">
+            <input type="text" class="input-sm form-control" name="start_date" value=<%= @trip.start_date %> />
+            <span class="input-group-addon">and</span>
+            <input type="text" class="input-sm form-control" name="end_date" value=<%= @trip.end_date %> />
+          </div>
+        </container>
+      </div>
+      <button type="submit" class="btn btn-default btn-sm">Update</button>
+    <% end %>
+
+  </div>
+</div>
+</div>

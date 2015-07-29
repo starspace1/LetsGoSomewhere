@@ -2,9 +2,9 @@
 <h3><%= @user.email %> is interested in the following destinations:</h3>
 
 <!-- TODO this could be a shared partial -->
-<ul>
+<ul class="list-group">
   <% @user.destinations.each do |destination| %>
-  <li><%= destination %></li>
+  <li class="list-group-item"><%= destination %></li>
   <% end %>
 </ul>
 

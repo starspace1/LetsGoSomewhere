@@ -1,21 +1,21 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
       <h3>My Trips</h3>
-      <ul>
+      <ul class="list-group">
         <%= render @trips %> 
       </ul>
-      <%= link_to "New Trip", new_trip_path %>
+      <%= link_to "New Trip", new_trip_path, class: "btn btn-default btn-sm" %>
     </div>
-    <div class="col-xs-8">
+    <div class="col-sm-8 col-xs-12">
       <h3>My Destinations</h3>
       <!-- TODO this could be a shared partial -->
-      <ul>
+      <ul class="list-group">
         <% current_user.destinations.each do |destination| %>
-        <li><%= destination %></li>
+        <li class="list-group-item"><%= destination %></li>
         <% end %>
       </ul>
-      <%= link_to "Update Destinations", interests_edit_path %> <br>
+      <%= link_to "Update Destinations", interests_edit_path, class: "btn btn-default" %> <br>
     </div>
   </div>
 </div>
