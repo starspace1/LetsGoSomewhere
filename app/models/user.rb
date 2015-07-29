@@ -27,4 +27,5 @@ class User < ActiveRecord::Base
     end
     return busy_intervals.create(start_date: date, end_date: date + 1)
   end
+  # TODO move json builder stuff into model file
 end

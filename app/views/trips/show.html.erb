@@ -4,7 +4,7 @@ Trip members:
 <ul>
   <% @trip.users.each do |user| %>
     <% unless user.invitation_token %>
-      <li><%= user.email %></li>
+      <li><%= link_to user.email, user_path(user) %></li>
     <% end %>
   <% end %>
 </ul>

@@ -9,9 +9,10 @@
     </div>
     <div class="col-xs-8">
       <h3>My Destinations</h3>
+      <!-- TODO this could be a shared partial -->
       <ul>
         <% current_user.destinations.each do |destination| %>
-        <li><%=  destination.city %>, <%=  destination.country %></li>
+        <li><%= destination %></li>
         <% end %>
       </ul>
       <%= link_to "Update Destinations", interests_edit_path %> <br>
