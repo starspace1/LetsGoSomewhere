@@ -5,7 +5,7 @@
       <ul>
         <%= render @trips %> 
       </ul>
-      <%= link_to "New Trip", new_trip_path %>
+      <%= link_to "New Trip", new_trip_path, class: "btn btn-default btn-sm" %>
     </div>
     <div class="col-xs-8">
       <h3>My Destinations</h3>
@@ -15,7 +15,7 @@
         <li><%= destination %></li>
         <% end %>
       </ul>
-      <%= link_to "Update Destinations", interests_edit_path %> <br>
+      <%= link_to "Update Destinations", interests_edit_path, class: "btn btn-default btn-sm" %> <br>
     </div>
   </div>
 </div>
