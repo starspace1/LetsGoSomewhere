@@ -1,7 +1,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-sm-12">
       <h1><%= @trip.name %></h1>
       <hr>
     </div>
@@ -10,7 +10,7 @@
 
 <div class="container">
 <div class="row">
-  <div class="col-xs-4">
+  <div class="col-sm-4">
     <h4>Trip members:</h4>
     <ul class="list-group">
       <% @trip.users.each do |user| %>
@@ -19,7 +19,7 @@
         <% end %>
       <% end %>
     </ul>
-    <p><%= link_to "Invite a friend!", trip_invite_path(@trip), class: "btn btn-default btn-sm" %></p>
+    <p><%= link_to "Invite a friend!", trip_invite_path(@trip), class: "btn btn-default btn" %></p>
 
     <h4>Potential Destinations:</h4>
     <ul class="list-group">
@@ -28,10 +28,10 @@
       <% end %>
     </ul>
 
-    <p><%= link_to "Leave trip", trip_leave_path(@trip), data: {confirm: "Are you sure?"}, class: "btn btn-default btn-sm" %></p>
+    <p><%= link_to "Leave trip", trip_leave_path(@trip), data: {confirm: "Are you sure?"}, class: "btn btn-default btn" %></p>
   </div>
 
-  <div class="col-xs-8">
+  <div class="col-sm-8">
     <h4>Free Dates:</h4>
     <div id='free_calendar'></div>
     <div id='free_calendar_url' value="<%= trip_path(@trip)%>.json"></div>
