@@ -41,11 +41,19 @@ $(document).on('ready page:load', function() {
     format: "yyyy-m-d"
   });
 
-    $('.datepicker').datepicker({
+  $('.datepicker').datepicker({
     autoclose: true,
     todayHighlight: true,
     format: "yyyy-m-d",
     orientation: "top"
   });
 
+  if( $('#free_calendar').length > 0 )
+  {
+    $('#free_calendar').fullCalendar({
+
+      events: $('#free_calendar_url').attr('value')
+    }); 
+  }
+  
 });

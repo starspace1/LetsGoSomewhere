@@ -31,12 +31,11 @@ Potential Destinations:
 <% end %>
 
 Free Dates:
-<ul>
-  <% @trip.free_dates.each do |date| %>
-    <li><%= date %></li>
-  <% end %>
-</ul>
+<div id='free_calendar'></div>
+<div id='free_calendar_url' value="<%= trip_path(@trip)%>.json"></div>
 
 <p><%= link_to "Invite a friend!", trip_invite_path(@trip) %></p>
 <p><%= link_to "Leave trip", trip_leave_path(@trip), data: {confirm: "Are you sure?"} %></p>
 <p><%= link_to "Home", root_path %></p>
+
+
