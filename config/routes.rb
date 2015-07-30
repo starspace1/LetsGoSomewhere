@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   get 'interests/edit'
   post 'interests/update'
 
+  get 'oauth/authorize'
+  get 'oauth/request_access_token'
+  get 'oauth/cal_test'
+
   resources :trips do
     get 'invite' => :create_invite
     post 'invite' => :send_invite
