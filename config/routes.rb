@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   root 'trips#index'
 
   resources :busy_intervals, only: [:index, :create, :edit, :destroy]
+  get 'busy_intervals/test'
+  get 'busy_intervals/destroy_all'
 
   resources :users, only: [:show]
 
@@ -12,7 +14,6 @@ Rails.application.routes.draw do
 
   get 'oauth/authorize'
   get 'oauth/request_access_token'
-  get 'oauth/cal_test'
 
   resources :trips do
     get 'invite' => :create_invite
