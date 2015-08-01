@@ -12,9 +12,11 @@
 <div class="row">
   <div class="col-sm-4">
     <h4>Trip members:</h4>
+    <!-- TODO sort of scrolling or format adjustment for when there are lots of friends -->
     <ul class="list-group">
       <% @trip.users.each do |user| %>
         <% unless user.invitation_token %>
+        <!-- TODO list users with pending invitations in italics -->
           <li class="list-group-item"><%= link_to user.email, user_path(user) %></li>
         <% end %>
       <% end %>
@@ -22,6 +24,7 @@
     <p><%= link_to "Invite a friend!", trip_invite_path(@trip), class: "btn btn-default btn" %></p>
 
     <h4>Potential Destinations:</h4>
+    <!-- TODO say something if there is no destination interest overlap between users -->
     <ul class="list-group">
       <% @trip.destination_ids.each do |id| %>
         <li class="list-group-item"><%= Destination.find(id) %></li>
@@ -32,12 +35,15 @@
   </div>
 
   <div class="col-sm-8">
+    <!-- TODO merge the free intervals maybe -->
     <!-- TODO change the calendar display month to the month of @trip.start_date -->
+    <!-- TODO only do queries when changing calendar view -->
     <h4>Free Dates:</h4>
     <div id='free_calendar'></div>
     <div id='free_calendar_url' value="<%= trip_path(@trip)%>.json"></div>
     <br>
     <p>Trip will be sometime between:</p>
+    <!-- TODO add little calendar glyphicon -->
     <!-- TODO make this calendar automatically jump to end date when you select start date -->
     <%= form_tag(trip_update_date_constraints_path(@trip)) do %>
       <div class="form-group">

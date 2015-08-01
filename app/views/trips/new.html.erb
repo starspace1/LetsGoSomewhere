@@ -1,11 +1,12 @@
 <h1>Create New Trip</h1>
-
+<!-- TODO make sure there are labels for every form input -->
 <%= form_for @trip do |f| %>
   <p>
     <%= f.label :name, "Trip Name:" %>
     <%= f.text_field :name %>
   </p>
   Some time between:
+  <!-- TODO add little calendar glyphicon -->
   <p>
     <%= f.text_field :start_date, :class => 'datepicker', value: Date.today %>
     and

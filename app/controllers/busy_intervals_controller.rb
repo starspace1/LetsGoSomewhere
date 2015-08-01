@@ -18,7 +18,7 @@ class BusyIntervalsController < ApplicationController
     current_user.busy_intervals.find(@id).destroy if @can_remove
   end
 
-  def test
+  def import
     # TODO DRY up
     google_api_client = Google::APIClient.new({
       application_name: GOOGLE[:application_name],
@@ -38,6 +38,7 @@ class BusyIntervalsController < ApplicationController
 
     primary_calendar_id = result.data.id
 
+    # TODO account for if user has no trips
     # TODO google api only allows get free/busy for 3 month chunks...deal with this
     t1 = current_user.trips.pluck(:start_date).min.strftime("%Y-%m-%dT%H:%M:%S.000Z")
     t2 = current_user.trips.pluck(:end_date).max.strftime("%Y-%m-%dT%H:%M:%S.000Z")

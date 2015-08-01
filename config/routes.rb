@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'trips#index'
 
   resources :busy_intervals, only: [:index, :create, :edit, :destroy]
-  get 'busy_intervals/test'
+  get 'busy_intervals/import'
   get 'busy_intervals/destroy_all'
 
   resources :users, only: [:show]

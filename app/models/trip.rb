@@ -4,6 +4,7 @@ class Trip < ActiveRecord::Base
   has_many :users, through: :groups
 
   # TODO add validation, start_date < end_date etc
+  # TODO delete trip if there are no users left in it
 
   def destination_ids
     # TODO make less C++ish
