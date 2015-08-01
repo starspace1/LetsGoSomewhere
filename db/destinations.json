@@ -1,0 +1,1376 @@
+[
+  {
+    "city":"Abu Dhabi",
+    "state":"",
+    "country":"UAE",
+    "region":"Middle East"
+  },
+  {
+    "city":"Adelaide",
+    "state":"",
+    "country":"Australia",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Amsterdam",
+    "state":"",
+    "country":"Netherlands",
+    "region":"Europe"
+  },
+  {
+    "city":"Anchorage",
+    "state":"Alaska",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Antigua",
+    "state":"",
+    "country":"Guatemala",
+    "region":"Central America"
+  },
+  {
+    "city":"Arusha",
+    "state":"",
+    "country":"Tanzania",
+    "region":"Africa"
+  },
+  {
+    "city":"Athens",
+    "state":"",
+    "country":"Greece",
+    "region":"Europe"
+  },
+  {
+    "city":"Auckland",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Austin",
+    "state":"Texas",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Bahamas",
+    "state":"",
+    "country":"Bahamas",
+    "region":"North America"
+  },
+  {
+    "city":"Bangkok",
+    "state":"",
+    "country":"Thailand",
+    "region":"Asia"
+  },
+  {
+    "city":"Barcelona",
+    "state":"",
+    "country":"Spain",
+    "region":"Europe"
+  },
+  {
+    "city":"Beijing",
+    "state":"",
+    "country":"China",
+    "region":"Asia"
+  },
+  {
+    "city":"Berlin",
+    "state":"",
+    "country":"Germany",
+    "region":"Europe"
+  },
+  {
+    "city":"Blenheim",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Bogota",
+    "state":"",
+    "country":"Colombia",
+    "region":"South America"
+  },
+  {
+    "city":"Bora Bora",
+    "state":"",
+    "country":"French Polynesia",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Boston",
+    "state":"Massachusetts",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Branson",
+    "state":"Missouri",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Brisbane",
+    "state":"",
+    "country":"Australia",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Budapest",
+    "state":"",
+    "country":"Hungary",
+    "region":"Europe"
+  },
+  {
+    "city":"Buenos Aires",
+    "state":"",
+    "country":"Argentina",
+    "region":"South America"
+  },
+  {
+    "city":"Cabo San Lucas",
+    "state":"",
+    "country":"Mexico",
+    "region":"North America"
+  },
+  {
+    "city":"Cairns",
+    "state":"",
+    "country":"Australia",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Cairo",
+    "state":"",
+    "country":"Egypt",
+    "region":"Middle East"
+  },
+  {
+    "city":"Camps Bay",
+    "state":"",
+    "country":"South Africa",
+    "region":"Africa"
+  },
+  {
+    "city":"Cape Cod",
+    "state":"Massachusetts",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Cape Town",
+    "state":"",
+    "country":"South Africa",
+    "region":"Africa"
+  },
+  {
+    "city":"Cartagena",
+    "state":"",
+    "country":"Colombia",
+    "region":"South America"
+  },
+  {
+    "city":"Cessnock",
+    "state":"",
+    "country":"Australia",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Charleston",
+    "state":"South Carolina",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Chiang Mai",
+    "state":"",
+    "country":"Thailand",
+    "region":"Asia"
+  },
+  {
+    "city":"Chicago",
+    "state":"Illinois",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Constantia",
+    "state":"",
+    "country":"South Africa",
+    "region":"Africa"
+  },
+  {
+    "city":"Copan",
+    "state":"",
+    "country":"Honduras",
+    "region":"Central America"
+  },
+  {
+    "city":"Crete",
+    "state":"",
+    "country":"Greece",
+    "region":"Europe"
+  },
+  {
+    "city":"Curitiba",
+    "state":"",
+    "country":"Brazil",
+    "region":"South America"
+  },
+  {
+    "city":"Cusco",
+    "state":"",
+    "country":"Peru",
+    "region":"South America"
+  },
+  {
+    "city":"Dahab",
+    "state":"",
+    "country":"Egypt",
+    "region":"Middle East"
+  },
+  {
+    "city":"Denpasar",
+    "state":"",
+    "country":"Indonesia",
+    "region":"Asia"
+  },
+  {
+    "city":"Dubai",
+    "state":"",
+    "country":"UAE",
+    "region":"Middle East"
+  },
+  {
+    "city":"Edinburgh",
+    "state":"",
+    "country":"Scotland",
+    "region":"Europe"
+  },
+  {
+    "city":"Eilat",
+    "state":"",
+    "country":"Israel",
+    "region":"Middle East"
+  },
+  {
+    "city":"El Calafate",
+    "state":"",
+    "country":"Argentina",
+    "region":"South America"
+  },
+  {
+    "city":"Essaouira",
+    "state":"",
+    "country":"Morocco",
+    "region":"Africa"
+  },
+  {
+    "city":"Fes",
+    "state":"",
+    "country":"Morocco",
+    "region":"Africa"
+  },
+  {
+    "city":"Florence",
+    "state":"",
+    "country":"Italy",
+    "region":"Europe"
+  },
+  {
+    "city":"Florianopolis",
+    "state":"",
+    "country":"Brazil",
+    "region":"South America"
+  },
+  {
+    "city":"Fortaleza",
+    "state":"",
+    "country":"Brazil",
+    "region":"South America"
+  },
+  {
+    "city":"Franschhoek",
+    "state":"",
+    "country":"South Africa",
+    "region":"Africa"
+  },
+  {
+    "city":"Funchal",
+    "state":"",
+    "country":"Portugal",
+    "region":"Europe"
+  },
+  {
+    "city":"George",
+    "state":"",
+    "country":"South Africa",
+    "region":"Africa"
+  },
+  {
+    "city":"Goreme",
+    "state":"",
+    "country":"Turkey",
+    "region":"Asia"
+  },
+  {
+    "city":"Gramado",
+    "state":"",
+    "country":"Brazil",
+    "region":"South America"
+  },
+  {
+    "city":"Granada",
+    "state":"",
+    "country":"Nicaragua",
+    "region":"Central America"
+  },
+  {
+    "city":"Grand Baie",
+    "state":"",
+    "country":"Mauritius",
+    "region":"Africa"
+  },
+  {
+    "city":"Grand Canyon",
+    "state":"",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Grand Case",
+    "state":"",
+    "country":"St Maarten",
+    "region":"North America"
+  },
+  {
+    "city":"Halifax",
+    "state":"",
+    "country":"Canada",
+    "region":"North America"
+  },
+  {
+    "city":"Hamilton",
+    "state":"",
+    "country":"Bermuda",
+    "region":"North America"
+  },
+  {
+    "city":"Hanoi",
+    "state":"",
+    "country":"Vietnam",
+    "region":"Asia"
+  },
+  {
+    "city":"Havana",
+    "state":"",
+    "country":"Cuba",
+    "region":"North America"
+  },
+  {
+    "city":"Hermanus",
+    "state":"",
+    "country":"South Africa",
+    "region":"Africa"
+  },
+  {
+    "city":"Ho Chi Minh City",
+    "state":"",
+    "country":"Vietnam",
+    "region":"Asia"
+  },
+  {
+    "city":"Hobart",
+    "state":"",
+    "country":"Australia",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Hoi An",
+    "state":"",
+    "country":"Vietnam",
+    "region":"Asia"
+  },
+  {
+    "city":"Hong Kong",
+    "state":"",
+    "country":"China",
+    "region":"Asia"
+  },
+  {
+    "city":"Honolulu",
+    "state":"Hawaii",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Hue",
+    "state":"",
+    "country":"Vietnam",
+    "region":"Asia"
+  },
+  {
+    "city":"Hurghada",
+    "state":"",
+    "country":"Egypt",
+    "region":"Middle East"
+  },
+  {
+    "city":"Iguazu Falls",
+    "state":"",
+    "country":"Brazil",
+    "region":"South America"
+  },
+  {
+    "city":"Ipojuca",
+    "state":"",
+    "country":"Brazil",
+    "region":"South America"
+  },
+  {
+    "city":"Istanbul",
+    "state":"",
+    "country":"Turkey",
+    "region":"Europe"
+  },
+  {
+    "city":"Jackson Hole",
+    "state":"",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Jaipur",
+    "state":"",
+    "country":"India",
+    "region":"Asia"
+  },
+  {
+    "city":"Jaisalmer",
+    "state":"",
+    "country":"India",
+    "region":"Asia"
+  },
+  {
+    "city":"Jericoacoara",
+    "state":"",
+    "country":"Brazil",
+    "region":"South America"
+  },
+  {
+    "city":"Jerusalem",
+    "state":"",
+    "country":"Israel",
+    "region":"Middle East"
+  },
+  {
+    "city":"Jerusalem",
+    "state":"",
+    "country":"Israel",
+    "region":"Middle East"
+  },
+  {
+    "city":"Johannesburg",
+    "state":"",
+    "country":"South Africa",
+    "region":"Africa"
+  },
+  {
+    "city":"Kaikoura",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Kathmandu",
+    "state":"",
+    "country":"Nepal",
+    "region":"Asia"
+  },
+  {
+    "city":"Killarney",
+    "state":"",
+    "country":"Ireland",
+    "region":"Europe"
+  },
+  {
+    "city":"Knysa",
+    "state":"",
+    "country":"South Africa",
+    "region":"Africa"
+  },
+  {
+    "city":"Krakow",
+    "state":"",
+    "country":"Poland",
+    "region":"Europe"
+  },
+  {
+    "city":"La Fortuna de San Carlos",
+    "state":"",
+    "country":"Costa Rica",
+    "region":"Central America"
+  },
+  {
+    "city":"La Oliva",
+    "state":"",
+    "country":"Spain",
+    "region":"Europe"
+  },
+  {
+    "city":"Lahaina",
+    "state":"Hawaii",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Langebaan",
+    "state":"",
+    "country":"South Africa",
+    "region":"Africa"
+  },
+  {
+    "city":"Las Vegas",
+    "state":"Nevada",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Lijiang",
+    "state":"",
+    "country":"China",
+    "region":"Asia"
+  },
+  {
+    "city":"Lima",
+    "state":"",
+    "country":"Peru",
+    "region":"South America"
+  },
+  {
+    "city":"Lisbon",
+    "state":"",
+    "country":"Portugal",
+    "region":"Europe"
+  },
+  {
+    "city":"Livingstone",
+    "state":"",
+    "country":"Zambia",
+    "region":"Africa"
+  },
+  {
+    "city":"London",
+    "state":"",
+    "country":"United Kingdom",
+    "region":"Europe"
+  },
+  {
+    "city":"Los Angeles",
+    "state":"California",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Luxor",
+    "state":"",
+    "country":"Egypt",
+    "region":"Middle East"
+  },
+  {
+    "city":"Maldives",
+    "state":"",
+    "country":"Maldives",
+    "region":"Asia"
+  },
+  {
+    "city":"Mancora",
+    "state":"",
+    "country":"Peru",
+    "region":"South America"
+  },
+  {
+    "city":"Margaret River",
+    "state":"",
+    "country":"Australia",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Marrakech",
+    "state":"",
+    "country":"Morocco",
+    "region":"Africa"
+  },
+  {
+    "city":"Maui",
+    "state":"Hawaii",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Melbourne",
+    "state":"",
+    "country":"Australia",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Mendoza",
+    "state":"",
+    "country":"Argentina",
+    "region":"South America"
+  },
+  {
+    "city":"Merida",
+    "state":"",
+    "country":"Mexico",
+    "region":"North America"
+  },
+  {
+    "city":"Merzouga",
+    "state":"",
+    "country":"Morocco",
+    "region":"Africa"
+  },
+  {
+    "city":"Mexico City",
+    "state":"",
+    "country":"Mexico",
+    "region":"North America"
+  },
+  {
+    "city":"Miami",
+    "state":"Florida",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Montego Bay",
+    "state":"",
+    "country":"Jamaica",
+    "region":"North America"
+  },
+  {
+    "city":"Montevideo",
+    "state":"",
+    "country":"Uruguay",
+    "region":"South America"
+  },
+  {
+    "city":"Montreal",
+    "state":"",
+    "country":"Canada",
+    "region":"North America"
+  },
+  {
+    "city":"Mumbai",
+    "state":"",
+    "country":"India",
+    "region":"Asia"
+  },
+  {
+    "city":"Nairobi",
+    "state":"",
+    "country":"Kenya",
+    "region":"Africa"
+  },
+  {
+    "city":"Napier",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Nashville",
+    "state":"Tennessee",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Negril",
+    "state":"",
+    "country":"Jamaica",
+    "region":"North America"
+  },
+  {
+    "city":"Nelson",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"New Dehli",
+    "state":"",
+    "country":"India",
+    "region":"Asia"
+  },
+  {
+    "city":"New Orleans",
+    "state":"Louisiana",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"New Plymouth",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"New York City",
+    "state":"New York",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Niagara Falls",
+    "state":"",
+    "country":"Canada",
+    "region":"North America"
+  },
+  {
+    "city":"Niagara-on-the-Lake",
+    "state":"",
+    "country":"Canada",
+    "region":"North America"
+  },
+  {
+    "city":"Noosa",
+    "state":"",
+    "country":"Australia",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Nungwi",
+    "state":"",
+    "country":"Tanzania",
+    "region":"Africa"
+  },
+  {
+    "city":"Ocho Rios",
+    "state":"",
+    "country":"Jamaica",
+    "region":"North America"
+  },
+  {
+    "city":"Orlando",
+    "state":"Florida",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Paarl",
+    "state":"",
+    "country":"South Africa",
+    "region":"Africa"
+  },
+  {
+    "city":"Palm Springs",
+    "state":"California",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Panama City",
+    "state":"",
+    "country":"Panama",
+    "region":"Central America"
+  },
+  {
+    "city":"Paris",
+    "state":"",
+    "country":"France",
+    "region":"Europe"
+  },
+  {
+    "city":"Pattaya",
+    "state":"",
+    "country":"Thailand",
+    "region":"Asia"
+  },
+  {
+    "city":"Phonm Penh",
+    "state":"",
+    "country":"Cambodia",
+    "region":"Asia"
+  },
+  {
+    "city":"Playa del Carmen",
+    "state":"",
+    "country":"Mexico",
+    "region":"North America"
+  },
+  {
+    "city":"Plettenberg Bay",
+    "state":"",
+    "country":"South Africa",
+    "region":"Africa"
+  },
+  {
+    "city":"Port Douglas",
+    "state":"",
+    "country":"Australia",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Port Vila",
+    "state":"",
+    "country":"Vanuatu",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Portland",
+    "state":"Oregon",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Prague",
+    "state":"",
+    "country":"Czech Republic",
+    "region":"Europe"
+  },
+  {
+    "city":"Puerto Vallarta",
+    "state":"",
+    "country":"Mexico",
+    "region":"North America"
+  },
+  {
+    "city":"Punta Cana",
+    "state":"",
+    "country":"Dominican Republic",
+    "region":"North America"
+  },
+  {
+    "city":"Quebec City",
+    "state":"",
+    "country":"Canada",
+    "region":"North America"
+  },
+  {
+    "city":"Queenstown",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Quito",
+    "state":"",
+    "country":"Ecuador",
+    "region":"South America"
+  },
+  {
+    "city":"Reykjavik",
+    "state":"",
+    "country":"Iceland",
+    "region":"Europe"
+  },
+  {
+    "city":"Rimini",
+    "state":"",
+    "country":"Italy",
+    "region":"Europe"
+  },
+  {
+    "city":"Rio de Janeiro",
+    "state":"",
+    "country":"Brazil",
+    "region":"South America"
+  },
+  {
+    "city":"Rome",
+    "state":"",
+    "country":"Italy",
+    "region":"Europe"
+  },
+  {
+    "city":"Rotorua",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Russell",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Salvador",
+    "state":"",
+    "country":"Brazil",
+    "region":"South America"
+  },
+  {
+    "city":"San Antonio",
+    "state":"Texas",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"San Carlos de Bariloche",
+    "state":"",
+    "country":"Argentina",
+    "region":"South America"
+  },
+  {
+    "city":"San Diego",
+    "state":"California",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"San Francisco",
+    "state":"California",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"San Ignacio",
+    "state":"",
+    "country":"Belize",
+    "region":"Central America"
+  },
+  {
+    "city":"San Juan",
+    "state":"",
+    "country":"Puerto Rico",
+    "region":"North America"
+  },
+  {
+    "city":"San Miguel de Allende",
+    "state":"",
+    "country":"Mexico",
+    "region":"North America"
+  },
+  {
+    "city":"San Pedro",
+    "state":"",
+    "country":"Belize",
+    "region":"Central America"
+  },
+  {
+    "city":"Santa Marta",
+    "state":"",
+    "country":"Colombia",
+    "region":"South America"
+  },
+  {
+    "city":"Santa Teresa",
+    "state":"",
+    "country":"Costa Rica",
+    "region":"Central America"
+  },
+  {
+    "city":"Santiago",
+    "state":"",
+    "country":"Chile",
+    "region":"South America"
+  },
+  {
+    "city":"Sao Paolo",
+    "state":"",
+    "country":"Brazil",
+    "region":"South America"
+  },
+  {
+    "city":"Savannah",
+    "state":"Georgia",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Savu Savu",
+    "state":"",
+    "country":"Fiji",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Seattle",
+    "state":"Washington",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Sedona",
+    "state":"Arizona",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Seminyak",
+    "state":"",
+    "country":"Indonesia",
+    "region":"Asia"
+  },
+  {
+    "city":"Seoul",
+    "state":"",
+    "country":"South Korea",
+    "region":"Asia"
+  },
+  {
+    "city":"Seven Mile Beach",
+    "state":"",
+    "country":"Grand Cayman",
+    "region":"North America"
+  },
+  {
+    "city":"Shanghai",
+    "state":"",
+    "country":"China",
+    "region":"Asia"
+  },
+  {
+    "city":"Sharm El Sheikh",
+    "state":"",
+    "country":"Egypt",
+    "region":"Middle East"
+  },
+  {
+    "city":"Siem Reap",
+    "state":"",
+    "country":"Cambodia",
+    "region":"Asia"
+  },
+  {
+    "city":"Sigatoka",
+    "state":"",
+    "country":"Fiji",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Singapore",
+    "state":"",
+    "country":"Singapore",
+    "region":"Asia"
+  },
+  {
+    "city":"Sorrento",
+    "state":"",
+    "country":"Italy",
+    "region":"Europe"
+  },
+  {
+    "city":"Soufriere",
+    "state":"",
+    "country":"St. Lucia",
+    "region":"North America"
+  },
+  {
+    "city":"St. Augustine",
+    "state":"Florida",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"St. Louis",
+    "state":"Missouri",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"St. Petersburg",
+    "state":"",
+    "country":"Russia",
+    "region":"Europe"
+  },
+  {
+    "city":"Stellenbosch",
+    "state":"",
+    "country":"South Africa",
+    "region":"Africa"
+  },
+  {
+    "city":"Sydney",
+    "state":"",
+    "country":"Australia",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Taipei",
+    "state":"",
+    "country":"Taiwan",
+    "region":"Asia"
+  },
+  {
+    "city":"Tamarindo",
+    "state":"",
+    "country":"Costa Rica",
+    "region":"Central America"
+  },
+  {
+    "city":"Taupo",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Tauranga",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Tel Aviv",
+    "state":"",
+    "country":"Israel",
+    "region":"Middle East"
+  },
+  {
+    "city":"Todos Santos",
+    "state":"",
+    "country":"Mexico",
+    "region":"North America"
+  },
+  {
+    "city":"Tofino",
+    "state":"",
+    "country":"Canada",
+    "region":"North America"
+  },
+  {
+    "city":"Tokyo",
+    "state":"",
+    "country":"Japan",
+    "region":"Asia"
+  },
+  {
+    "city":"Toronto",
+    "state":"",
+    "country":"Canada",
+    "region":"North America"
+  },
+  {
+    "city":"Trou-aux-Biches",
+    "state":"",
+    "country":"Mauritius",
+    "region":"Africa"
+  },
+  {
+    "city":"Tulum",
+    "state":"",
+    "country":"Mexico",
+    "region":"North America"
+  },
+  {
+    "city":"Ubud",
+    "state":"",
+    "country":"Indonesia",
+    "region":"Asia"
+  },
+  {
+    "city":"Ubud",
+    "state":"",
+    "country":"Indonesia",
+    "region":"Asia"
+  },
+  {
+    "city":"Ukunda",
+    "state":"",
+    "country":"Kenya",
+    "region":"Africa"
+  },
+  {
+    "city":"Urubamba",
+    "state":"",
+    "country":"Peru",
+    "region":"South America"
+  },
+  {
+    "city":"USVI",
+    "state":"",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Vancouver",
+    "state":"",
+    "country":"Canada",
+    "region":"North America"
+  },
+  {
+    "city":"Venice",
+    "state":"",
+    "country":"Italy",
+    "region":"Europe"
+  },
+  {
+    "city":"Victoria",
+    "state":"",
+    "country":"Canada",
+    "region":"North America"
+  },
+  {
+    "city":"Victoria Falls",
+    "state":"",
+    "country":"Zimbabwe",
+    "region":"Africa"
+  },
+  {
+    "city":"Vienna",
+    "state":"",
+    "country":"Austria",
+    "region":"Europe"
+  },
+  {
+    "city":"Villa La Angostura",
+    "state":"",
+    "country":"Argentina",
+    "region":"South America"
+  },
+  {
+    "city":"Wanaka",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Washington",
+    "state":"District of Columbia",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Watamu",
+    "state":"",
+    "country":"Kenya",
+    "region":"Africa"
+  },
+  {
+    "city":"West End",
+    "state":"",
+    "country":"Honduras",
+    "region":"Central America"
+  },
+  {
+    "city":"West End Village",
+    "state":"",
+    "country":"Anguilla",
+    "region":"North America"
+  },
+  {
+    "city":"Whistler",
+    "state":"",
+    "country":"Canada",
+    "region":"North America"
+  },
+  {
+    "city":"Yellowstone",
+    "state":"",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Yosemite",
+    "state":"",
+    "country":"USA",
+    "region":"North America"
+  },
+  {
+    "city":"Zermatt",
+    "state":"",
+    "country":"Switzerland",
+    "region":"Europe"
+  },
+  {
+    "city":"Zihuatanejo",
+    "state":"",
+    "country":"Mexico",
+    "region":"North America"
+  },
+  {
+    "city":"Zurich",
+    "state":"",
+    "country":"Switzerland",
+    "region":"Europe"
+  },
+  {
+    "city":"El Chalten",
+    "state":"",
+    "country":"Argentina",
+    "region":"South America"
+  },
+  {
+    "city":"Milan",
+    "state":"",
+    "country":"Italy",
+    "region":"Europe"
+  },
+  {
+    "city":"Valleta",
+    "state":"",
+    "country":"Malta",
+    "region":"Europe"
+  },
+  {
+    "city":"Plovdiv",
+    "state":"",
+    "country":"Bulgaria",
+    "region":"Europe"
+  },
+  {
+    "city":"Salisbury",
+    "state":"",
+    "country":"England",
+    "region":"Europe"
+  },
+  {
+    "city":"Chennai",
+    "state":"",
+    "country":"India",
+    "region":"Asia"
+  },
+  {
+    "city":"Malaga",
+    "state":"",
+    "country":"Spain",
+    "region":"Europe"
+  },
+  {
+    "city":"Hamburg",
+    "state":"",
+    "country":"Germany",
+    "region":"Europe"
+  },
+  {
+    "city":"Nizwa",
+    "state":"",
+    "country":"Oman",
+    "region":"Middle East"
+  },
+  {
+    "city":"Wellington",
+    "state":"",
+    "country":"New Zealand",
+    "region":"South Pacific"
+  },
+  {
+    "city":"Belgrade",
+    "state":"",
+    "country":"Serbia",
+    "region":"Europe"
+  },
+  {
+    "city":"Salta",
+    "state":"",
+    "country":"Argentina",
+    "region":"South America"
+  },
+  {
+    "city":"Birmingham",
+    "state":"",
+    "country":"England",
+    "region":"Europe"
+  },
+  {
+    "city":"Yangon",
+    "state":"",
+    "country":"Myanmar",
+    "region":"Asia"
+  }
+]
