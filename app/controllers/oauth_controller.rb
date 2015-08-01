@@ -39,6 +39,6 @@ class OauthController < ApplicationController
 
     session[:access_token] = response['access_token']
 
-    redirect_to busy_intervals_test_path, notice: "Yay! Your access token is #{session[:access_token]}."
+    redirect_to busy_intervals_test_path
   end
 end

@@ -33,24 +33,25 @@ class BusyIntervalsController < ApplicationController
 
     google_calendar_api = google_api_client.discovered_api('calendar', 'v3')
 
-    # TODO google api only allows get free/busy for 3 month chunks
-    # deal with this.
+    result = google_api_client.execute(:api_method => google_calendar_api.calendars.get,
+                        :parameters => {'calendarId' => 'primary'})
+
+    primary_calendar_id = result.data.id
+
+    # TODO google api only allows get free/busy for 3 month chunks...deal with this
     t1 = current_user.trips.pluck(:start_date).min.strftime("%Y-%m-%dT%H:%M:%S.000Z")
     t2 = current_user.trips.pluck(:end_date).max.strftime("%Y-%m-%dT%H:%M:%S.000Z")
 
-    # TODO remove testing hard coded data
-    response = google_api_client.execute(
+    @response = google_api_client.execute(
       api_method: google_calendar_api.freebusy.query,
       body: JSON.dump({
         timeMin: t1,
         timeMax: t2,
-        timeZone: "ETC",
-        items: [{id: 'leslie.k.brown@gmail.com'}]
+        items: [{id: primary_calendar_id}]
         }),
       headers: {'Content-Type' => 'application/json'})
 
-    # TODO remove testing hard coded data
-    @busy_dates = response.data["calendars"]["leslie.k.brown@gmail.com"]["busy"] 
+    @busy_dates = @response.data["calendars"][primary_calendar_id]["busy"] 
 
     # TODO merge busy intervals
     @busy_dates.each do |date|
