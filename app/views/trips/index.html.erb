@@ -10,12 +10,7 @@
     <div class="col-sm-8 col-xs-12">
       <h3>My Destinations</h3>
       <!-- TODO photo carousel of photos from user's destinations -->
-      <!-- TODO this could be a shared partial -->
-      <ul class="list-group">
-        <% current_user.destinations.each do |destination| %>
-        <li class="list-group-item"><%= destination %></li>
-        <% end %>
-      </ul>
+      <%= render partial: 'shared/destinations', locals: {destinations: current_user.destinations} %>
       <%= link_to "Update Destinations", interests_edit_path, class: "btn btn-default" %> <br>
     </div>
   </div>

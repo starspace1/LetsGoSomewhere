@@ -1,13 +1,6 @@
 <!-- TODO make this only visible to people who share a trip with @user -->
 <h3><%= @user.email %> is interested in the following destinations:</h3>
-
-<!-- TODO this could be a shared partial -->
-<ul class="list-group">
-  <% @user.destinations.each do |destination| %>
-  <li class="list-group-item"><%= destination %></li>
-  <% end %>
-</ul>
-
+<%= render partial: 'shared/destinations', locals: {destinations: @user.destinations} %>
 <h3><%= @user.email %> is busy on the following dates:</h3>
 <div id='user_calendar'></div>
 <div id='user_calendar_url' value="<%= user_path(@user)%>.json"></div>
