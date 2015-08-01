@@ -39,6 +39,6 @@ class OauthController < ApplicationController
 
     session[:access_token] = response['access_token']
 
-    redirect_to busy_intervals_test_path
+    redirect_to busy_intervals_import_path
   end
 end
