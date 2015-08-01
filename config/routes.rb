@@ -4,11 +4,16 @@ Rails.application.routes.draw do
   root 'trips#index'
 
   resources :busy_intervals, only: [:index, :create, :edit, :destroy]
+  get 'busy_intervals/test'
+  get 'busy_intervals/destroy_all'
 
   resources :users, only: [:show]
 
   get 'interests/edit'
   post 'interests/update'
+
+  get 'oauth/authorize'
+  get 'oauth/request_access_token'
 
   resources :trips do
     get 'invite' => :create_invite
