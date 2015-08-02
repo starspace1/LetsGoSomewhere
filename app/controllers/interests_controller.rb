@@ -8,4 +8,7 @@ class InterestsController < ApplicationController
     @user.update(params.require(:user).permit(:destination_ids => []))
     redirect_to root_path, notice: "Success! Updated your destinations."
   end
+
+  def map
+  end
 end

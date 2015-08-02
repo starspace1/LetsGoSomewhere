@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get 'interests/edit'
   post 'interests/update'
+  get 'interests/map'
 
   get 'oauth/authorize'
   get 'oauth/request_access_token'

@@ -16,10 +16,15 @@
 //= require bootstrap-sprockets
 //= require fullcalendar
 //= require bootstrap-datepicker
+//= require jvectormap
+//= require jvectormap/maps/us_merc_en
+//= require jvectormap/maps/world_mill_en
 //= require_tree .
 
 
 $(document).on('ready page:load', function() {
+
+  $('#world-map').vectorMap();
 
   $('#calendar').fullCalendar({
 
