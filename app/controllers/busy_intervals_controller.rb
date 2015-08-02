@@ -38,16 +38,12 @@ class BusyIntervalsController < ApplicationController
 
     primary_calendar_id = result.data.id
 
-    # TODO account for if user has no trips
     # TODO google api only allows get free/busy for 3 month chunks...deal with this
-    t1 = current_user.trips.pluck(:start_date).min.strftime("%Y-%m-%dT%H:%M:%S.000Z")
-    t2 = current_user.trips.pluck(:end_date).max.strftime("%Y-%m-%dT%H:%M:%S.000Z")
-
     @response = google_api_client.execute(
       api_method: google_calendar_api.freebusy.query,
       body: JSON.dump({
-        timeMin: t1,
-        timeMax: t2,
+        timeMin: google_format(current_user.earliest_trip_date),
+        timeMax: google_format(current_user.latest_trip_date),
         items: [{id: primary_calendar_id}]
         }),
       headers: {'Content-Type' => 'application/json'})
@@ -66,4 +62,12 @@ class BusyIntervalsController < ApplicationController
     current_user.busy_intervals.destroy_all
     redirect_to busy_intervals_path, notice: "Calendar was cleared."
   end
+
+  private
+
+  def google_format date_time
+    # TODO move this to more logical place
+    date_time.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+  end
+
 end
