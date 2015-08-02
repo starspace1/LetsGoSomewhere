@@ -9,6 +9,22 @@ class User < ActiveRecord::Base
   has_many :destinations, through: :interests
   has_many :busy_intervals
 
+  def earliest_trip_date
+    if trips.any?
+      trips.pluck(:start_date).min
+    else
+      Date.today
+    end
+  end
+
+  def latest_trip_date
+    if trips.any?
+      trips.pluck(:end_date).max
+    else
+      Date.today.next_month(3)
+    end
+  end
+
   def mark_as_busy date
     # TODO clean up this mess
     # Look through existing busy intervals for this user
