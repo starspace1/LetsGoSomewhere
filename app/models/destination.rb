@@ -6,4 +6,8 @@ class Destination < ActiveRecord::Base
   def to_s
     "#{city}, #{country}"
   end
+
+  def self.regions
+    Destination.all.pluck(:region).uniq
+  end
 end
