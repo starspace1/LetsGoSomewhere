@@ -32,10 +32,14 @@ $(document).on('ready page:load', function() {
       var map =  new jvm.WorldMap({
 
         onRegionClick: function(e, code) {
-          alert("You clicked "+code);
+          console.log("You clicked "+code);
         },
 
         container: $('#world-map'),
+
+        markersSelectable: true,
+
+        regionsSelectable: true,
 
         markerStyle: {
           initial: {
@@ -50,7 +54,11 @@ $(document).on('ready page:load', function() {
           }]
         },
 
-        markers: data
+        markers: data,
+
+        onMarkerClick: function(e, code) {
+           $.post( "/interests/add", { id: data[code].id } );
+        }
 
       });
     });
