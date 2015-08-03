@@ -8,7 +8,7 @@
 
 User.create(name: "Leslie Brown", email: "lkb@alum.mit.edu", password: "password", password_confirmation: "password")
 
-destinations = JSON.parse File.read "db/destinations_test.json"
+destinations = JSON.parse File.read "db/destinations.json"
 
 destinations.each do |destination|
   Destination.create(destination)

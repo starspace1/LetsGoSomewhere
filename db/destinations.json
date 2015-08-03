@@ -1,1376 +1,1834 @@
 [
   {
-    "city":"Abu Dhabi",
-    "state":"",
-    "country":"UAE",
-    "region":"Middle East"
+    "city": "Abu Dhabi",
+    "state": null,
+    "country": "UAE",
+    "region": "Middle East",
+    "latitude": 24.466667,
+    "longitude": 54.36666700000001
+  },
+  {
+    "city": "Adelaide",
+    "state": null,
+    "country": "Australia",
+    "region": "South Pacific",
+    "latitude": -34.92862119999999,
+    "longitude": 138.5999594
+  },
+  {
+    "city": "Amsterdam",
+    "state": null,
+    "country": "Netherlands",
+    "region": "Europe",
+    "latitude": 52.3702157,
+    "longitude": 4.895167900000001
+  },
+  {
+    "city": "Anchorage",
+    "state": "Alaska",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 61.2180556,
+    "longitude": -149.9002778
+  },
+  {
+    "city": "Antigua",
+    "state": null,
+    "country": "Guatemala",
+    "region": "Central America",
+    "latitude": 14.5585707,
+    "longitude": -90.729523
+  },
+  {
+    "city": "Arusha",
+    "state": null,
+    "country": "Tanzania",
+    "region": "Africa",
+    "latitude": -3.372301,
+    "longitude": 36.6944136
+  },
+  {
+    "city": "Athens",
+    "state": null,
+    "country": "Greece",
+    "region": "Europe",
+    "latitude": 37.983917,
+    "longitude": 23.7293599
+  },
+  {
+    "city": "Auckland",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -36.8484597,
+    "longitude": 174.7633315
+  },
+  {
+    "city": "Austin",
+    "state": "Texas",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 30.267153,
+    "longitude": -97.7430608
+  },
+  {
+    "city": "Bahamas",
+    "state": null,
+    "country": "Bahamas",
+    "region": "North America",
+    "latitude": 25.03428,
+    "longitude": -77.39627999999999
+  },
+  {
+    "city": "Bangkok",
+    "state": null,
+    "country": "Thailand",
+    "region": "Asia",
+    "latitude": 13.7563309,
+    "longitude": 100.5017651
+  },
+  {
+    "city": "Barcelona",
+    "state": null,
+    "country": "Spain",
+    "region": "Europe",
+    "latitude": 41.297445,
+    "longitude": 2.0832941
+  },
+  {
+    "city": "Beijing",
+    "state": null,
+    "country": "China",
+    "region": "Asia",
+    "latitude": 39.904211,
+    "longitude": 116.407395
   },
   {
-    "city":"Adelaide",
-    "state":"",
-    "country":"Australia",
-    "region":"South Pacific"
+    "city": "Berlin",
+    "state": null,
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 52.52000659999999,
+    "longitude": 13.404954
   },
   {
-    "city":"Amsterdam",
-    "state":"",
-    "country":"Netherlands",
-    "region":"Europe"
+    "city": "Blenheim",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -41.5134425,
+    "longitude": 173.9612498
   },
   {
-    "city":"Anchorage",
-    "state":"Alaska",
-    "country":"USA",
-    "region":"North America"
+    "city": "Bogota",
+    "state": null,
+    "country": "Colombia",
+    "region": "South America",
+    "latitude": 4.710988599999999,
+    "longitude": -74.072092
   },
   {
-    "city":"Antigua",
-    "state":"",
-    "country":"Guatemala",
-    "region":"Central America"
+    "city": "Bora Bora",
+    "state": null,
+    "country": "French Polynesia",
+    "region": "South Pacific",
+    "latitude": -16.5004126,
+    "longitude": -151.7414904
   },
   {
-    "city":"Arusha",
-    "state":"",
-    "country":"Tanzania",
-    "region":"Africa"
+    "city": "Boston",
+    "state": "Massachusetts",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 42.3600825,
+    "longitude": -71.0588801
   },
   {
-    "city":"Athens",
-    "state":"",
-    "country":"Greece",
-    "region":"Europe"
+    "city": "Branson",
+    "state": "Missouri",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 36.6436731,
+    "longitude": -93.21851439999999
   },
   {
-    "city":"Auckland",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
+    "city": "Brisbane",
+    "state": null,
+    "country": "Australia",
+    "region": "South Pacific",
+    "latitude": -27.4710107,
+    "longitude": 153.0234489
   },
   {
-    "city":"Austin",
-    "state":"Texas",
-    "country":"USA",
-    "region":"North America"
+    "city": "Budapest",
+    "state": null,
+    "country": "Hungary",
+    "region": "Europe",
+    "latitude": 47.497912,
+    "longitude": 19.040235
   },
   {
-    "city":"Bahamas",
-    "state":"",
-    "country":"Bahamas",
-    "region":"North America"
+    "city": "Buenos Aires",
+    "state": null,
+    "country": "Argentina",
+    "region": "South America",
+    "latitude": -34.6036844,
+    "longitude": -58.3815591
   },
   {
-    "city":"Bangkok",
-    "state":"",
-    "country":"Thailand",
-    "region":"Asia"
+    "city": "Cabo San Lucas",
+    "state": null,
+    "country": "Mexico",
+    "region": "North America",
+    "latitude": 22.8905327,
+    "longitude": -109.9167371
   },
   {
-    "city":"Barcelona",
-    "state":"",
-    "country":"Spain",
-    "region":"Europe"
+    "city": "Cairns",
+    "state": null,
+    "country": "Australia",
+    "region": "South Pacific",
+    "latitude": -16.9203338,
+    "longitude": 145.7708595
   },
   {
-    "city":"Beijing",
-    "state":"",
-    "country":"China",
-    "region":"Asia"
+    "city": "Cairo",
+    "state": null,
+    "country": "Egypt",
+    "region": "Middle East",
+    "latitude": 30.0444196,
+    "longitude": 31.2357116
   },
   {
-    "city":"Berlin",
-    "state":"",
-    "country":"Germany",
-    "region":"Europe"
+    "city": "Camps Bay",
+    "state": null,
+    "country": "South Africa",
+    "region": "Africa",
+    "latitude": -33.95,
+    "longitude": 18.383333
   },
   {
-    "city":"Blenheim",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
+    "city": "Cape Cod",
+    "state": "Massachusetts",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 41.69909579999999,
+    "longitude": -70.32091129999999
   },
   {
-    "city":"Bogota",
-    "state":"",
-    "country":"Colombia",
-    "region":"South America"
+    "city": "Cape Town",
+    "state": null,
+    "country": "South Africa",
+    "region": "Africa",
+    "latitude": -33.9248685,
+    "longitude": 18.4240553
   },
   {
-    "city":"Bora Bora",
-    "state":"",
-    "country":"French Polynesia",
-    "region":"South Pacific"
+    "city": "Cartagena",
+    "state": null,
+    "country": "Colombia",
+    "region": "South America",
+    "latitude": 10.3910485,
+    "longitude": -75.4794257
   },
   {
-    "city":"Boston",
-    "state":"Massachusetts",
-    "country":"USA",
-    "region":"North America"
+    "city": "Cessnock",
+    "state": null,
+    "country": "Australia",
+    "region": "South Pacific",
+    "latitude": -32.8345782,
+    "longitude": 151.3564619
   },
   {
-    "city":"Branson",
-    "state":"Missouri",
-    "country":"USA",
-    "region":"North America"
+    "city": "Charleston",
+    "state": "South Carolina",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 32.7764749,
+    "longitude": -79.93105120000001
   },
   {
-    "city":"Brisbane",
-    "state":"",
-    "country":"Australia",
-    "region":"South Pacific"
+    "city": "Chiang Mai",
+    "state": null,
+    "country": "Thailand",
+    "region": "Asia",
+    "latitude": 18.787747,
+    "longitude": 98.99312839999999
   },
   {
-    "city":"Budapest",
-    "state":"",
-    "country":"Hungary",
-    "region":"Europe"
+    "city": "Chicago",
+    "state": "Illinois",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 41.8781136,
+    "longitude": -87.6297982
   },
   {
-    "city":"Buenos Aires",
-    "state":"",
-    "country":"Argentina",
-    "region":"South America"
+    "city": "Constantia",
+    "state": null,
+    "country": "South Africa",
+    "region": "Africa",
+    "latitude": -34.0257608,
+    "longitude": 18.4230789
   },
   {
-    "city":"Cabo San Lucas",
-    "state":"",
-    "country":"Mexico",
-    "region":"North America"
+    "city": "Copan",
+    "state": null,
+    "country": "Honduras",
+    "region": "Central America",
+    "latitude": 14.9360838,
+    "longitude": -88.86469799999999
   },
   {
-    "city":"Cairns",
-    "state":"",
-    "country":"Australia",
-    "region":"South Pacific"
+    "city": "Crete",
+    "state": null,
+    "country": "Greece",
+    "region": "Europe",
+    "latitude": 35.240117,
+    "longitude": 24.8092691
   },
   {
-    "city":"Cairo",
-    "state":"",
-    "country":"Egypt",
-    "region":"Middle East"
+    "city": "Curitiba",
+    "state": null,
+    "country": "Brazil",
+    "region": "South America",
+    "latitude": -25.4289541,
+    "longitude": -49.267137
   },
   {
-    "city":"Camps Bay",
-    "state":"",
-    "country":"South Africa",
-    "region":"Africa"
+    "city": "Cusco",
+    "state": null,
+    "country": "Peru",
+    "region": "South America",
+    "latitude": -13.53195,
+    "longitude": -71.96746259999999
   },
   {
-    "city":"Cape Cod",
-    "state":"Massachusetts",
-    "country":"USA",
-    "region":"North America"
+    "city": "Dahab",
+    "state": null,
+    "country": "Egypt",
+    "region": "Middle East",
+    "latitude": 28.5091355,
+    "longitude": 34.5136344
   },
   {
-    "city":"Cape Town",
-    "state":"",
-    "country":"South Africa",
-    "region":"Africa"
+    "city": "Denpasar",
+    "state": null,
+    "country": "Indonesia",
+    "region": "Asia",
+    "latitude": -8.65,
+    "longitude": 115.216667
   },
   {
-    "city":"Cartagena",
-    "state":"",
-    "country":"Colombia",
-    "region":"South America"
+    "city": "Dubai",
+    "state": null,
+    "country": "UAE",
+    "region": "Middle East",
+    "latitude": 25.2048493,
+    "longitude": 55.2707828
   },
   {
-    "city":"Cessnock",
-    "state":"",
-    "country":"Australia",
-    "region":"South Pacific"
+    "city": "Edinburgh",
+    "state": null,
+    "country": "Scotland",
+    "region": "Europe",
+    "latitude": 55.953252,
+    "longitude": -3.188267
   },
   {
-    "city":"Charleston",
-    "state":"South Carolina",
-    "country":"USA",
-    "region":"North America"
+    "city": "Eilat",
+    "state": null,
+    "country": "Israel",
+    "region": "Middle East",
+    "latitude": 29.557669,
+    "longitude": 34.951925
   },
   {
-    "city":"Chiang Mai",
-    "state":"",
-    "country":"Thailand",
-    "region":"Asia"
+    "city": "El Calafate",
+    "state": null,
+    "country": "Argentina",
+    "region": "South America",
+    "latitude": -50.337969,
+    "longitude": -72.2647981
   },
   {
-    "city":"Chicago",
-    "state":"Illinois",
-    "country":"USA",
-    "region":"North America"
+    "city": "Essaouira",
+    "state": null,
+    "country": "Morocco",
+    "region": "Africa",
+    "latitude": 31.5084926,
+    "longitude": -9.7595041
   },
   {
-    "city":"Constantia",
-    "state":"",
-    "country":"South Africa",
-    "region":"Africa"
+    "city": "Fes",
+    "state": null,
+    "country": "Morocco",
+    "region": "Africa",
+    "latitude": 34.033333,
+    "longitude": -5
   },
   {
-    "city":"Copan",
-    "state":"",
-    "country":"Honduras",
-    "region":"Central America"
+    "city": "Florence",
+    "state": null,
+    "country": "Italy",
+    "region": "Europe",
+    "latitude": 43.7695604,
+    "longitude": 11.2558136
   },
   {
-    "city":"Crete",
-    "state":"",
-    "country":"Greece",
-    "region":"Europe"
+    "city": "Florianopolis",
+    "state": null,
+    "country": "Brazil",
+    "region": "South America",
+    "latitude": -27.5953778,
+    "longitude": -48.5480499
   },
   {
-    "city":"Curitiba",
-    "state":"",
-    "country":"Brazil",
-    "region":"South America"
+    "city": "Fortaleza",
+    "state": null,
+    "country": "Brazil",
+    "region": "South America",
+    "latitude": -3.7318616,
+    "longitude": -38.5266704
   },
   {
-    "city":"Cusco",
-    "state":"",
-    "country":"Peru",
-    "region":"South America"
+    "city": "Franschhoek",
+    "state": null,
+    "country": "South Africa",
+    "region": "Africa",
+    "latitude": -33.916667,
+    "longitude": 19.133333
   },
   {
-    "city":"Dahab",
-    "state":"",
-    "country":"Egypt",
-    "region":"Middle East"
+    "city": "Funchal",
+    "state": null,
+    "country": "Portugal",
+    "region": "Europe",
+    "latitude": 32.6669328,
+    "longitude": -16.9240554
   },
   {
-    "city":"Denpasar",
-    "state":"",
-    "country":"Indonesia",
-    "region":"Asia"
+    "city": "George",
+    "state": null,
+    "country": "South Africa",
+    "region": "Africa",
+    "latitude": -33.966667,
+    "longitude": 22.45
   },
   {
-    "city":"Dubai",
-    "state":"",
-    "country":"UAE",
-    "region":"Middle East"
+    "city": "Goreme",
+    "state": null,
+    "country": "Turkey",
+    "region": "Asia",
+    "latitude": 38.643056,
+    "longitude": 34.828889
   },
   {
-    "city":"Edinburgh",
-    "state":"",
-    "country":"Scotland",
-    "region":"Europe"
+    "city": "Gramado",
+    "state": null,
+    "country": "Brazil",
+    "region": "South America",
+    "latitude": -29.3745686,
+    "longitude": -50.876435
   },
   {
-    "city":"Eilat",
-    "state":"",
-    "country":"Israel",
-    "region":"Middle East"
+    "city": "Granada",
+    "state": null,
+    "country": "Nicaragua",
+    "region": "Central America",
+    "latitude": 11.933333,
+    "longitude": -85.95
   },
   {
-    "city":"El Calafate",
-    "state":"",
-    "country":"Argentina",
-    "region":"South America"
+    "city": "Grand Baie",
+    "state": null,
+    "country": "Mauritius",
+    "region": "Africa",
+    "latitude": -20.0074193,
+    "longitude": 57.58442099999999
   },
   {
-    "city":"Essaouira",
-    "state":"",
-    "country":"Morocco",
-    "region":"Africa"
+    "city": "Grand Canyon",
+    "state": null,
+    "country": "USA",
+    "region": "North America",
+    "latitude": 36.0544445,
+    "longitude": -112.1401108
   },
   {
-    "city":"Fes",
-    "state":"",
-    "country":"Morocco",
-    "region":"Africa"
+    "city": "Grand Case",
+    "state": null,
+    "country": "St Maarten",
+    "region": "North America",
+    "latitude": 18.101111,
+    "longitude": -63.051944
   },
   {
-    "city":"Florence",
-    "state":"",
-    "country":"Italy",
-    "region":"Europe"
+    "city": "Halifax",
+    "state": null,
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 44.6488625,
+    "longitude": -63.5753196
   },
   {
-    "city":"Florianopolis",
-    "state":"",
-    "country":"Brazil",
-    "region":"South America"
+    "city": "Hamilton",
+    "state": null,
+    "country": "Bermuda",
+    "region": "North America",
+    "latitude": 32.294816,
+    "longitude": -64.781375
   },
   {
-    "city":"Fortaleza",
-    "state":"",
-    "country":"Brazil",
-    "region":"South America"
+    "city": "Hanoi",
+    "state": null,
+    "country": "Vietnam",
+    "region": "Asia",
+    "latitude": 21.0277644,
+    "longitude": 105.8341598
   },
   {
-    "city":"Franschhoek",
-    "state":"",
-    "country":"South Africa",
-    "region":"Africa"
+    "city": "Havana",
+    "state": null,
+    "country": "Cuba",
+    "region": "North America",
+    "latitude": 23.159167,
+    "longitude": -82.271056
   },
   {
-    "city":"Funchal",
-    "state":"",
-    "country":"Portugal",
-    "region":"Europe"
+    "city": "Hermanus",
+    "state": null,
+    "country": "South Africa",
+    "region": "Africa",
+    "latitude": -34.4092004,
+    "longitude": 19.2504436
   },
   {
-    "city":"George",
-    "state":"",
-    "country":"South Africa",
-    "region":"Africa"
+    "city": "Ho Chi Minh City",
+    "state": null,
+    "country": "Vietnam",
+    "region": "Asia",
+    "latitude": 10.8184631,
+    "longitude": 106.6588245
   },
   {
-    "city":"Goreme",
-    "state":"",
-    "country":"Turkey",
-    "region":"Asia"
+    "city": "Hobart",
+    "state": null,
+    "country": "Australia",
+    "region": "South Pacific",
+    "latitude": -42.8819032,
+    "longitude": 147.3238148
   },
   {
-    "city":"Gramado",
-    "state":"",
-    "country":"Brazil",
-    "region":"South America"
+    "city": "Hoi An",
+    "state": null,
+    "country": "Vietnam",
+    "region": "Asia",
+    "latitude": 15.8800584,
+    "longitude": 108.3380469
   },
   {
-    "city":"Granada",
-    "state":"",
-    "country":"Nicaragua",
-    "region":"Central America"
+    "city": "Hong Kong",
+    "state": null,
+    "country": "China",
+    "region": "Asia",
+    "latitude": 22.396428,
+    "longitude": 114.109497
   },
   {
-    "city":"Grand Baie",
-    "state":"",
-    "country":"Mauritius",
-    "region":"Africa"
+    "city": "Honolulu",
+    "state": "Hawaii",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 21.3069444,
+    "longitude": -157.8583333
   },
   {
-    "city":"Grand Canyon",
-    "state":"",
-    "country":"USA",
-    "region":"North America"
+    "city": "Hue",
+    "state": null,
+    "country": "Vietnam",
+    "region": "Asia",
+    "latitude": 16.4498,
+    "longitude": 107.5623501
   },
   {
-    "city":"Grand Case",
-    "state":"",
-    "country":"St Maarten",
-    "region":"North America"
+    "city": "Hurghada",
+    "state": null,
+    "country": "Egypt",
+    "region": "Middle East",
+    "latitude": 27.2578957,
+    "longitude": 33.8116067
   },
   {
-    "city":"Halifax",
-    "state":"",
-    "country":"Canada",
-    "region":"North America"
+    "city": "Iguazu Falls",
+    "state": null,
+    "country": "Brazil",
+    "region": "South America",
+    "latitude": -25.695259,
+    "longitude": -54.4366662
   },
   {
-    "city":"Hamilton",
-    "state":"",
-    "country":"Bermuda",
-    "region":"North America"
+    "city": "Ipojuca",
+    "state": null,
+    "country": "Brazil",
+    "region": "South America",
+    "latitude": -8.398109,
+    "longitude": -35.0609851
   },
   {
-    "city":"Hanoi",
-    "state":"",
-    "country":"Vietnam",
-    "region":"Asia"
+    "city": "Istanbul",
+    "state": null,
+    "country": "Turkey",
+    "region": "Europe",
+    "latitude": 41.0082376,
+    "longitude": 28.9783589
   },
   {
-    "city":"Havana",
-    "state":"",
-    "country":"Cuba",
-    "region":"North America"
+    "city": "Jackson Hole",
+    "state": null,
+    "country": "USA",
+    "region": "North America",
+    "latitude": 43.4799291,
+    "longitude": -110.7624282
   },
   {
-    "city":"Hermanus",
-    "state":"",
-    "country":"South Africa",
-    "region":"Africa"
+    "city": "Jaipur",
+    "state": null,
+    "country": "India",
+    "region": "Asia",
+    "latitude": 26.9124336,
+    "longitude": 75.7872709
   },
   {
-    "city":"Ho Chi Minh City",
-    "state":"",
-    "country":"Vietnam",
-    "region":"Asia"
+    "city": "Jaisalmer",
+    "state": null,
+    "country": "India",
+    "region": "Asia",
+    "latitude": 26.9157487,
+    "longitude": 70.9083443
   },
   {
-    "city":"Hobart",
-    "state":"",
-    "country":"Australia",
-    "region":"South Pacific"
+    "city": "Jericoacoara",
+    "state": null,
+    "country": "Brazil",
+    "region": "South America",
+    "latitude": -2.7956223,
+    "longitude": -40.5142274
   },
   {
-    "city":"Hoi An",
-    "state":"",
-    "country":"Vietnam",
-    "region":"Asia"
+    "city": "Jerusalem",
+    "state": null,
+    "country": "Israel",
+    "region": "Middle East",
+    "latitude": 31.768319,
+    "longitude": 35.21371
   },
   {
-    "city":"Hong Kong",
-    "state":"",
-    "country":"China",
-    "region":"Asia"
+    "city": "Jerusalem",
+    "state": null,
+    "country": "Israel",
+    "region": "Middle East",
+    "latitude": 31.768319,
+    "longitude": 35.21371
   },
   {
-    "city":"Honolulu",
-    "state":"Hawaii",
-    "country":"USA",
-    "region":"North America"
+    "city": "Johannesburg",
+    "state": null,
+    "country": "South Africa",
+    "region": "Africa",
+    "latitude": -26.2041028,
+    "longitude": 28.0473051
   },
   {
-    "city":"Hue",
-    "state":"",
-    "country":"Vietnam",
-    "region":"Asia"
+    "city": "Kaikoura",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -42.4008174,
+    "longitude": 173.681386
   },
   {
-    "city":"Hurghada",
-    "state":"",
-    "country":"Egypt",
-    "region":"Middle East"
+    "city": "Kathmandu",
+    "state": null,
+    "country": "Nepal",
+    "region": "Asia",
+    "latitude": 27.7,
+    "longitude": 85.333333
   },
   {
-    "city":"Iguazu Falls",
-    "state":"",
-    "country":"Brazil",
-    "region":"South America"
+    "city": "Killarney",
+    "state": null,
+    "country": "Ireland",
+    "region": "Europe",
+    "latitude": 52.05993530000001,
+    "longitude": -9.5044265
   },
   {
-    "city":"Ipojuca",
-    "state":"",
-    "country":"Brazil",
-    "region":"South America"
+    "city": "Knysa",
+    "state": null,
+    "country": "South Africa",
+    "region": "Africa",
+    "latitude": -34.0350856,
+    "longitude": 23.0464693
   },
   {
-    "city":"Istanbul",
-    "state":"",
-    "country":"Turkey",
-    "region":"Europe"
+    "city": "Krakow",
+    "state": null,
+    "country": "Poland",
+    "region": "Europe",
+    "latitude": 50.06465009999999,
+    "longitude": 19.9449799
   },
   {
-    "city":"Jackson Hole",
-    "state":"",
-    "country":"USA",
-    "region":"North America"
+    "city": "La Fortuna de San Carlos",
+    "state": null,
+    "country": "Costa Rica",
+    "region": "Central America",
+    "latitude": 10.4678335,
+    "longitude": -84.64268059999999
   },
   {
-    "city":"Jaipur",
-    "state":"",
-    "country":"India",
-    "region":"Asia"
+    "city": "La Oliva",
+    "state": null,
+    "country": "Spain",
+    "region": "Europe",
+    "latitude": 28.6100767,
+    "longitude": -13.9267252
   },
   {
-    "city":"Jaisalmer",
-    "state":"",
-    "country":"India",
-    "region":"Asia"
+    "city": "Lahaina",
+    "state": "Hawaii",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 20.8783333,
+    "longitude": -156.6825
   },
   {
-    "city":"Jericoacoara",
-    "state":"",
-    "country":"Brazil",
-    "region":"South America"
+    "city": "Langebaan",
+    "state": null,
+    "country": "South Africa",
+    "region": "Africa",
+    "latitude": -33.091667,
+    "longitude": 18.033333
   },
   {
-    "city":"Jerusalem",
-    "state":"",
-    "country":"Israel",
-    "region":"Middle East"
+    "city": "Las Vegas",
+    "state": "Nevada",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 36.1699412,
+    "longitude": -115.1398296
   },
   {
-    "city":"Jerusalem",
-    "state":"",
-    "country":"Israel",
-    "region":"Middle East"
+    "city": "Lijiang",
+    "state": null,
+    "country": "China",
+    "region": "Asia",
+    "latitude": 26.855047,
+    "longitude": 100.227751
   },
   {
-    "city":"Johannesburg",
-    "state":"",
-    "country":"South Africa",
-    "region":"Africa"
+    "city": "Lima",
+    "state": null,
+    "country": "Peru",
+    "region": "South America",
+    "latitude": -12.046374,
+    "longitude": -77.0427934
   },
   {
-    "city":"Kaikoura",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
+    "city": "Lisbon",
+    "state": null,
+    "country": "Portugal",
+    "region": "Europe",
+    "latitude": 38.7222524,
+    "longitude": -9.1393366
   },
   {
-    "city":"Kathmandu",
-    "state":"",
-    "country":"Nepal",
-    "region":"Asia"
+    "city": "Livingstone",
+    "state": null,
+    "country": "Zambia",
+    "region": "Africa",
+    "latitude": -17.8519791,
+    "longitude": 25.8285153
   },
   {
-    "city":"Killarney",
-    "state":"",
-    "country":"Ireland",
-    "region":"Europe"
+    "city": "London",
+    "state": null,
+    "country": "United Kingdom",
+    "region": "Europe",
+    "latitude": 51.5073509,
+    "longitude": -0.1277583
   },
   {
-    "city":"Knysa",
-    "state":"",
-    "country":"South Africa",
-    "region":"Africa"
+    "city": "Los Angeles",
+    "state": "California",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 34.0522342,
+    "longitude": -118.2436849
   },
   {
-    "city":"Krakow",
-    "state":"",
-    "country":"Poland",
-    "region":"Europe"
+    "city": "Luxor",
+    "state": null,
+    "country": "Egypt",
+    "region": "Middle East",
+    "latitude": 25.6872431,
+    "longitude": 32.6396357
   },
   {
-    "city":"La Fortuna de San Carlos",
-    "state":"",
-    "country":"Costa Rica",
-    "region":"Central America"
+    "city": "Maldives",
+    "state": null,
+    "country": "Maldives",
+    "region": "Asia",
+    "latitude": 1.977247,
+    "longitude": 73.5361034
   },
   {
-    "city":"La Oliva",
-    "state":"",
-    "country":"Spain",
-    "region":"Europe"
+    "city": "Mancora",
+    "state": null,
+    "country": "Peru",
+    "region": "South America",
+    "latitude": -4.1031,
+    "longitude": -81.04809999999999
   },
   {
-    "city":"Lahaina",
-    "state":"Hawaii",
-    "country":"USA",
-    "region":"North America"
+    "city": "Margaret River",
+    "state": null,
+    "country": "Australia",
+    "region": "South Pacific",
+    "latitude": -33.9536762,
+    "longitude": 115.0735653
   },
   {
-    "city":"Langebaan",
-    "state":"",
-    "country":"South Africa",
-    "region":"Africa"
+    "city": "Marrakech",
+    "state": null,
+    "country": "Morocco",
+    "region": "Africa",
+    "latitude": 31.63,
+    "longitude": -8.008889
   },
   {
-    "city":"Las Vegas",
-    "state":"Nevada",
-    "country":"USA",
-    "region":"North America"
+    "city": "Maui",
+    "state": "Hawaii",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 20.7983626,
+    "longitude": -156.3319253
   },
   {
-    "city":"Lijiang",
-    "state":"",
-    "country":"China",
-    "region":"Asia"
+    "city": "Melbourne",
+    "state": null,
+    "country": "Australia",
+    "region": "South Pacific",
+    "latitude": -37.814107,
+    "longitude": 144.96328
   },
   {
-    "city":"Lima",
-    "state":"",
-    "country":"Peru",
-    "region":"South America"
+    "city": "Mendoza",
+    "state": null,
+    "country": "Argentina",
+    "region": "South America",
+    "latitude": -32.8894587,
+    "longitude": -68.8458386
   },
   {
-    "city":"Lisbon",
-    "state":"",
-    "country":"Portugal",
-    "region":"Europe"
+    "city": "Merida",
+    "state": null,
+    "country": "Mexico",
+    "region": "North America",
+    "latitude": 20.9673702,
+    "longitude": -89.5925857
   },
   {
-    "city":"Livingstone",
-    "state":"",
-    "country":"Zambia",
-    "region":"Africa"
+    "city": "Merzouga",
+    "state": null,
+    "country": "Morocco",
+    "region": "Africa",
+    "latitude": 31.099167,
+    "longitude": -4.011667
   },
   {
-    "city":"London",
-    "state":"",
-    "country":"United Kingdom",
-    "region":"Europe"
+    "city": "Mexico City",
+    "state": null,
+    "country": "Mexico",
+    "region": "North America",
+    "latitude": 19.4326077,
+    "longitude": -99.133208
   },
   {
-    "city":"Los Angeles",
-    "state":"California",
-    "country":"USA",
-    "region":"North America"
+    "city": "Miami",
+    "state": "Florida",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 25.7616798,
+    "longitude": -80.1917902
   },
   {
-    "city":"Luxor",
-    "state":"",
-    "country":"Egypt",
-    "region":"Middle East"
+    "city": "Montego Bay",
+    "state": null,
+    "country": "Jamaica",
+    "region": "North America",
+    "latitude": 18.466667,
+    "longitude": -77.91666699999999
   },
   {
-    "city":"Maldives",
-    "state":"",
-    "country":"Maldives",
-    "region":"Asia"
+    "city": "Montevideo",
+    "state": null,
+    "country": "Uruguay",
+    "region": "South America",
+    "latitude": -34.9011127,
+    "longitude": -56.16453139999999
   },
   {
-    "city":"Mancora",
-    "state":"",
-    "country":"Peru",
-    "region":"South America"
+    "city": "Montreal",
+    "state": null,
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 45.5016889,
+    "longitude": -73.567256
   },
   {
-    "city":"Margaret River",
-    "state":"",
-    "country":"Australia",
-    "region":"South Pacific"
+    "city": "Mumbai",
+    "state": null,
+    "country": "India",
+    "region": "Asia",
+    "latitude": 19.0759837,
+    "longitude": 72.8776559
   },
   {
-    "city":"Marrakech",
-    "state":"",
-    "country":"Morocco",
-    "region":"Africa"
+    "city": "Nairobi",
+    "state": null,
+    "country": "Kenya",
+    "region": "Africa",
+    "latitude": -1.2920659,
+    "longitude": 36.8219462
   },
   {
-    "city":"Maui",
-    "state":"Hawaii",
-    "country":"USA",
-    "region":"North America"
+    "city": "Napier",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -39.4928444,
+    "longitude": 176.9120178
   },
   {
-    "city":"Melbourne",
-    "state":"",
-    "country":"Australia",
-    "region":"South Pacific"
+    "city": "Nashville",
+    "state": "Tennessee",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 36.1626638,
+    "longitude": -86.7816016
   },
   {
-    "city":"Mendoza",
-    "state":"",
-    "country":"Argentina",
-    "region":"South America"
+    "city": "Negril",
+    "state": null,
+    "country": "Jamaica",
+    "region": "North America",
+    "latitude": 18.2683058,
+    "longitude": -78.3472424
   },
   {
-    "city":"Merida",
-    "state":"",
-    "country":"Mexico",
-    "region":"North America"
+    "city": "Nelson",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -41.2706319,
+    "longitude": 173.2839653
   },
   {
-    "city":"Merzouga",
-    "state":"",
-    "country":"Morocco",
-    "region":"Africa"
+    "city": "New Dehli",
+    "state": null,
+    "country": "India",
+    "region": "Asia",
+    "latitude": 28.6139391,
+    "longitude": 77.2090212
   },
   {
-    "city":"Mexico City",
-    "state":"",
-    "country":"Mexico",
-    "region":"North America"
+    "city": "New Orleans",
+    "state": "Louisiana",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 29.95106579999999,
+    "longitude": -90.0715323
   },
   {
-    "city":"Miami",
-    "state":"Florida",
-    "country":"USA",
-    "region":"North America"
+    "city": "New Plymouth",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -39.0556253,
+    "longitude": 174.0752278
   },
   {
-    "city":"Montego Bay",
-    "state":"",
-    "country":"Jamaica",
-    "region":"North America"
+    "city": "New York City",
+    "state": "New York",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 40.7127837,
+    "longitude": -74.0059413
   },
   {
-    "city":"Montevideo",
-    "state":"",
-    "country":"Uruguay",
-    "region":"South America"
+    "city": "Niagara Falls",
+    "state": null,
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 43.0895577,
+    "longitude": -79.0849436
   },
   {
-    "city":"Montreal",
-    "state":"",
-    "country":"Canada",
-    "region":"North America"
+    "city": "Niagara-on-the-Lake",
+    "state": null,
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 43.2549988,
+    "longitude": -79.0772616
   },
   {
-    "city":"Mumbai",
-    "state":"",
-    "country":"India",
-    "region":"Asia"
+    "city": "Noosa",
+    "state": null,
+    "country": "Australia",
+    "region": "South Pacific",
+    "latitude": -26.3906167,
+    "longitude": 153.1049452
   },
   {
-    "city":"Nairobi",
-    "state":"",
-    "country":"Kenya",
-    "region":"Africa"
+    "city": "Nungwi",
+    "state": null,
+    "country": "Tanzania",
+    "region": "Africa",
+    "latitude": -5.726,
+    "longitude": 39.296
   },
   {
-    "city":"Napier",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
+    "city": "Ocho Rios",
+    "state": null,
+    "country": "Jamaica",
+    "region": "North America",
+    "latitude": 18.4056822,
+    "longitude": -77.0967357
   },
   {
-    "city":"Nashville",
-    "state":"Tennessee",
-    "country":"USA",
-    "region":"North America"
+    "city": "Orlando",
+    "state": "Florida",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 28.5383355,
+    "longitude": -81.3792365
   },
   {
-    "city":"Negril",
-    "state":"",
-    "country":"Jamaica",
-    "region":"North America"
+    "city": "Paarl",
+    "state": null,
+    "country": "South Africa",
+    "region": "Africa",
+    "latitude": -33.724167,
+    "longitude": 18.955833
   },
   {
-    "city":"Nelson",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
+    "city": "Palm Springs",
+    "state": "California",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 33.8302961,
+    "longitude": -116.5452921
   },
   {
-    "city":"New Dehli",
-    "state":"",
-    "country":"India",
-    "region":"Asia"
+    "city": "Panama City",
+    "state": null,
+    "country": "Panama",
+    "region": "Central America",
+    "latitude": 8.983333,
+    "longitude": -79.516667
   },
   {
-    "city":"New Orleans",
-    "state":"Louisiana",
-    "country":"USA",
-    "region":"North America"
+    "city": "Paris",
+    "state": null,
+    "country": "France",
+    "region": "Europe",
+    "latitude": 48.856614,
+    "longitude": 2.3522219
   },
   {
-    "city":"New Plymouth",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
+    "city": "Pattaya",
+    "state": null,
+    "country": "Thailand",
+    "region": "Asia",
+    "latitude": 12.9276082,
+    "longitude": 100.8770813
   },
   {
-    "city":"New York City",
-    "state":"New York",
-    "country":"USA",
-    "region":"North America"
+    "city": "Phonm Penh",
+    "state": null,
+    "country": "Cambodia",
+    "region": "Asia",
+    "latitude": 11.5448729,
+    "longitude": 104.8921668
   },
   {
-    "city":"Niagara Falls",
-    "state":"",
-    "country":"Canada",
-    "region":"North America"
+    "city": "Playa del Carmen",
+    "state": null,
+    "country": "Mexico",
+    "region": "North America",
+    "latitude": 20.6295586,
+    "longitude": -87.0738851
   },
   {
-    "city":"Niagara-on-the-Lake",
-    "state":"",
-    "country":"Canada",
-    "region":"North America"
+    "city": "Plettenberg Bay",
+    "state": null,
+    "country": "South Africa",
+    "region": "Africa",
+    "latitude": -34.05,
+    "longitude": 23.366667
   },
   {
-    "city":"Noosa",
-    "state":"",
-    "country":"Australia",
-    "region":"South Pacific"
+    "city": "Port Douglas",
+    "state": null,
+    "country": "Australia",
+    "region": "South Pacific",
+    "latitude": -16.4839785,
+    "longitude": 145.4658327
   },
   {
-    "city":"Nungwi",
-    "state":"",
-    "country":"Tanzania",
-    "region":"Africa"
+    "city": "Port Vila",
+    "state": null,
+    "country": "Vanuatu",
+    "region": "South Pacific",
+    "latitude": -17.7332512,
+    "longitude": 168.3273245
   },
   {
-    "city":"Ocho Rios",
-    "state":"",
-    "country":"Jamaica",
-    "region":"North America"
+    "city": "Portland",
+    "state": "Oregon",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 45.5230622,
+    "longitude": -122.6764816
   },
   {
-    "city":"Orlando",
-    "state":"Florida",
-    "country":"USA",
-    "region":"North America"
+    "city": "Prague",
+    "state": null,
+    "country": "Czech Republic",
+    "region": "Europe",
+    "latitude": 50.0755381,
+    "longitude": 14.4378005
   },
   {
-    "city":"Paarl",
-    "state":"",
-    "country":"South Africa",
-    "region":"Africa"
+    "city": "Puerto Vallarta",
+    "state": null,
+    "country": "Mexico",
+    "region": "North America",
+    "latitude": 20.653407,
+    "longitude": -105.2253316
   },
   {
-    "city":"Palm Springs",
-    "state":"California",
-    "country":"USA",
-    "region":"North America"
+    "city": "Punta Cana",
+    "state": null,
+    "country": "Dominican Republic",
+    "region": "North America",
+    "latitude": 18.5820101,
+    "longitude": -68.40547289999999
   },
   {
-    "city":"Panama City",
-    "state":"",
-    "country":"Panama",
-    "region":"Central America"
+    "city": "Quebec City",
+    "state": null,
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 46.8032826,
+    "longitude": -71.242796
   },
   {
-    "city":"Paris",
-    "state":"",
-    "country":"France",
-    "region":"Europe"
+    "city": "Queenstown",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -45.0311622,
+    "longitude": 168.6626435
   },
   {
-    "city":"Pattaya",
-    "state":"",
-    "country":"Thailand",
-    "region":"Asia"
+    "city": "Quito",
+    "state": null,
+    "country": "Ecuador",
+    "region": "South America",
+    "latitude": -0.1806532,
+    "longitude": -78.4678382
   },
   {
-    "city":"Phonm Penh",
-    "state":"",
-    "country":"Cambodia",
-    "region":"Asia"
+    "city": "Reykjavik",
+    "state": null,
+    "country": "Iceland",
+    "region": "Europe",
+    "latitude": 64.133333,
+    "longitude": -21.933333
   },
   {
-    "city":"Playa del Carmen",
-    "state":"",
-    "country":"Mexico",
-    "region":"North America"
+    "city": "Rimini",
+    "state": null,
+    "country": "Italy",
+    "region": "Europe",
+    "latitude": 44.0678288,
+    "longitude": 12.5695158
   },
   {
-    "city":"Plettenberg Bay",
-    "state":"",
-    "country":"South Africa",
-    "region":"Africa"
+    "city": "Rio de Janeiro",
+    "state": null,
+    "country": "Brazil",
+    "region": "South America",
+    "latitude": -22.9068467,
+    "longitude": -43.1728965
   },
   {
-    "city":"Port Douglas",
-    "state":"",
-    "country":"Australia",
-    "region":"South Pacific"
+    "city": "Rome",
+    "state": null,
+    "country": "Italy",
+    "region": "Europe",
+    "latitude": 41.9027835,
+    "longitude": 12.4963655
   },
   {
-    "city":"Port Vila",
-    "state":"",
-    "country":"Vanuatu",
-    "region":"South Pacific"
+    "city": "Rotorua",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -38.1368478,
+    "longitude": 176.2497461
   },
   {
-    "city":"Portland",
-    "state":"Oregon",
-    "country":"USA",
-    "region":"North America"
+    "city": "Russell",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -35.2623103,
+    "longitude": 174.1223544
   },
   {
-    "city":"Prague",
-    "state":"",
-    "country":"Czech Republic",
-    "region":"Europe"
+    "city": "Salvador",
+    "state": null,
+    "country": "Brazil",
+    "region": "South America",
+    "latitude": -12.9730401,
+    "longitude": -38.502304
   },
   {
-    "city":"Puerto Vallarta",
-    "state":"",
-    "country":"Mexico",
-    "region":"North America"
+    "city": "San Antonio",
+    "state": "Texas",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 29.4241219,
+    "longitude": -98.49362819999999
   },
   {
-    "city":"Punta Cana",
-    "state":"",
-    "country":"Dominican Republic",
-    "region":"North America"
+    "city": "San Carlos de Bariloche",
+    "state": null,
+    "country": "Argentina",
+    "region": "South America",
+    "latitude": -41.1334722,
+    "longitude": -71.3102778
   },
   {
-    "city":"Quebec City",
-    "state":"",
-    "country":"Canada",
-    "region":"North America"
+    "city": "San Diego",
+    "state": "California",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 32.715738,
+    "longitude": -117.1610838
   },
   {
-    "city":"Queenstown",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
+    "city": "San Francisco",
+    "state": "California",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 37.7749295,
+    "longitude": -122.4194155
   },
   {
-    "city":"Quito",
-    "state":"",
-    "country":"Ecuador",
-    "region":"South America"
+    "city": "San Ignacio",
+    "state": null,
+    "country": "Belize",
+    "region": "Central America",
+    "latitude": 17.1522786,
+    "longitude": -89.0800227
   },
   {
-    "city":"Reykjavik",
-    "state":"",
-    "country":"Iceland",
-    "region":"Europe"
+    "city": "San Juan",
+    "state": null,
+    "country": "Puerto Rico",
+    "region": "North America",
+    "latitude": 18.4663338,
+    "longitude": -66.1057217
   },
   {
-    "city":"Rimini",
-    "state":"",
-    "country":"Italy",
-    "region":"Europe"
+    "city": "San Miguel de Allende",
+    "state": null,
+    "country": "Mexico",
+    "region": "North America",
+    "latitude": 20.9144491,
+    "longitude": -100.745235
   },
   {
-    "city":"Rio de Janeiro",
-    "state":"",
-    "country":"Brazil",
-    "region":"South America"
+    "city": "San Pedro",
+    "state": null,
+    "country": "Belize",
+    "region": "Central America",
+    "latitude": 17.9213664,
+    "longitude": -87.9610905
   },
   {
-    "city":"Rome",
-    "state":"",
-    "country":"Italy",
-    "region":"Europe"
+    "city": "Santa Marta",
+    "state": null,
+    "country": "Colombia",
+    "region": "South America",
+    "latitude": 11.2403547,
+    "longitude": -74.2110227
   },
   {
-    "city":"Rotorua",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
+    "city": "Santa Teresa",
+    "state": null,
+    "country": "Costa Rica",
+    "region": "Central America",
+    "latitude": 9.9294076,
+    "longitude": -83.77965929999999
   },
   {
-    "city":"Russell",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
+    "city": "Santiago",
+    "state": null,
+    "country": "Chile",
+    "region": "South America",
+    "latitude": -33.4488897,
+    "longitude": -70.6692655
   },
   {
-    "city":"Salvador",
-    "state":"",
-    "country":"Brazil",
-    "region":"South America"
+    "city": "Sao Paolo",
+    "state": null,
+    "country": "Brazil",
+    "region": "South America",
+    "latitude": -23.5505199,
+    "longitude": -46.63330939999999
   },
   {
-    "city":"San Antonio",
-    "state":"Texas",
-    "country":"USA",
-    "region":"North America"
+    "city": "Savannah",
+    "state": "Georgia",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 32.0835407,
+    "longitude": -81.09983419999999
   },
   {
-    "city":"San Carlos de Bariloche",
-    "state":"",
-    "country":"Argentina",
-    "region":"South America"
+    "city": "Savu Savu",
+    "state": null,
+    "country": "Fiji",
+    "region": "South Pacific",
+    "latitude": -16.7799114,
+    "longitude": 179.3381105
   },
   {
-    "city":"San Diego",
-    "state":"California",
-    "country":"USA",
-    "region":"North America"
+    "city": "Seattle",
+    "state": "Washington",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 47.6062095,
+    "longitude": -122.3320708
   },
   {
-    "city":"San Francisco",
-    "state":"California",
-    "country":"USA",
-    "region":"North America"
+    "city": "Sedona",
+    "state": "Arizona",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 34.8697395,
+    "longitude": -111.7609896
   },
   {
-    "city":"San Ignacio",
-    "state":"",
-    "country":"Belize",
-    "region":"Central America"
+    "city": "Seminyak",
+    "state": null,
+    "country": "Indonesia",
+    "region": "Asia",
+    "latitude": -8.691289399999999,
+    "longitude": 115.1681653
   },
   {
-    "city":"San Juan",
-    "state":"",
-    "country":"Puerto Rico",
-    "region":"North America"
+    "city": "Seoul",
+    "state": null,
+    "country": "South Korea",
+    "region": "Asia",
+    "latitude": 37.566535,
+    "longitude": 126.9779692
   },
   {
-    "city":"San Miguel de Allende",
-    "state":"",
-    "country":"Mexico",
-    "region":"North America"
+    "city": "Seven Mile Beach",
+    "state": null,
+    "country": "Grand Cayman",
+    "region": "North America",
+    "latitude": 19.3338672,
+    "longitude": -81.3816993
   },
   {
-    "city":"San Pedro",
-    "state":"",
-    "country":"Belize",
-    "region":"Central America"
+    "city": "Shanghai",
+    "state": null,
+    "country": "China",
+    "region": "Asia",
+    "latitude": 31.230416,
+    "longitude": 121.473701
   },
   {
-    "city":"Santa Marta",
-    "state":"",
-    "country":"Colombia",
-    "region":"South America"
+    "city": "Sharm El Sheikh",
+    "state": null,
+    "country": "Egypt",
+    "region": "Middle East",
+    "latitude": 27.9158175,
+    "longitude": 34.3299505
   },
   {
-    "city":"Santa Teresa",
-    "state":"",
-    "country":"Costa Rica",
-    "region":"Central America"
+    "city": "Siem Reap",
+    "state": null,
+    "country": "Cambodia",
+    "region": "Asia",
+    "latitude": 13.411632,
+    "longitude": 103.812986
   },
   {
-    "city":"Santiago",
-    "state":"",
-    "country":"Chile",
-    "region":"South America"
+    "city": "Sigatoka",
+    "state": null,
+    "country": "Fiji",
+    "region": "South Pacific",
+    "latitude": -18.1416372,
+    "longitude": 177.5074315
   },
   {
-    "city":"Sao Paolo",
-    "state":"",
-    "country":"Brazil",
-    "region":"South America"
+    "city": "Singapore",
+    "state": null,
+    "country": "Singapore",
+    "region": "Asia",
+    "latitude": 1.2800945,
+    "longitude": 103.8509491
   },
   {
-    "city":"Savannah",
-    "state":"Georgia",
-    "country":"USA",
-    "region":"North America"
+    "city": "Sorrento",
+    "state": null,
+    "country": "Italy",
+    "region": "Europe",
+    "latitude": 40.6262925,
+    "longitude": 14.3757985
   },
   {
-    "city":"Savu Savu",
-    "state":"",
-    "country":"Fiji",
-    "region":"South Pacific"
+    "city": "Soufriere",
+    "state": null,
+    "country": "St. Lucia",
+    "region": "North America",
+    "latitude": 13.8582085,
+    "longitude": -61.03549139999999
   },
   {
-    "city":"Seattle",
-    "state":"Washington",
-    "country":"USA",
-    "region":"North America"
+    "city": "St. Augustine",
+    "state": "Florida",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 29.9012437,
+    "longitude": -81.31243409999999
   },
   {
-    "city":"Sedona",
-    "state":"Arizona",
-    "country":"USA",
-    "region":"North America"
+    "city": "St. Louis",
+    "state": "Missouri",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 38.6270025,
+    "longitude": -90.19940419999999
   },
   {
-    "city":"Seminyak",
-    "state":"",
-    "country":"Indonesia",
-    "region":"Asia"
+    "city": "St. Petersburg",
+    "state": null,
+    "country": "Russia",
+    "region": "Europe",
+    "latitude": 59.9342802,
+    "longitude": 30.3350986
   },
   {
-    "city":"Seoul",
-    "state":"",
-    "country":"South Korea",
-    "region":"Asia"
+    "city": "Stellenbosch",
+    "state": null,
+    "country": "South Africa",
+    "region": "Africa",
+    "latitude": -33.9321045,
+    "longitude": 18.860152
   },
   {
-    "city":"Seven Mile Beach",
-    "state":"",
-    "country":"Grand Cayman",
-    "region":"North America"
+    "city": "Sydney",
+    "state": null,
+    "country": "Australia",
+    "region": "South Pacific",
+    "latitude": -33.8674869,
+    "longitude": 151.2069902
   },
   {
-    "city":"Shanghai",
-    "state":"",
-    "country":"China",
-    "region":"Asia"
+    "city": "Taipei",
+    "state": null,
+    "country": "Taiwan",
+    "region": "Asia",
+    "latitude": 25.0329694,
+    "longitude": 121.5654177
   },
   {
-    "city":"Sharm El Sheikh",
-    "state":"",
-    "country":"Egypt",
-    "region":"Middle East"
+    "city": "Tamarindo",
+    "state": null,
+    "country": "Costa Rica",
+    "region": "Central America",
+    "latitude": 10.299167,
+    "longitude": -85.83999999999999
   },
   {
-    "city":"Siem Reap",
-    "state":"",
-    "country":"Cambodia",
-    "region":"Asia"
+    "city": "Taupo",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -38.6856924,
+    "longitude": 176.0702098
   },
   {
-    "city":"Sigatoka",
-    "state":"",
-    "country":"Fiji",
-    "region":"South Pacific"
+    "city": "Tauranga",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -37.68779749999999,
+    "longitude": 176.1651295
   },
   {
-    "city":"Singapore",
-    "state":"",
-    "country":"Singapore",
-    "region":"Asia"
+    "city": "Tel Aviv",
+    "state": null,
+    "country": "Israel",
+    "region": "Middle East",
+    "latitude": 32.0852999,
+    "longitude": 34.78176759999999
   },
   {
-    "city":"Sorrento",
-    "state":"",
-    "country":"Italy",
-    "region":"Europe"
+    "city": "Todos Santos",
+    "state": null,
+    "country": "Mexico",
+    "region": "North America",
+    "latitude": 23.4463619,
+    "longitude": -110.2265101
   },
   {
-    "city":"Soufriere",
-    "state":"",
-    "country":"St. Lucia",
-    "region":"North America"
+    "city": "Tofino",
+    "state": null,
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 49.1529842,
+    "longitude": -125.9066184
   },
   {
-    "city":"St. Augustine",
-    "state":"Florida",
-    "country":"USA",
-    "region":"North America"
+    "city": "Tokyo",
+    "state": null,
+    "country": "Japan",
+    "region": "Asia",
+    "latitude": 35.7090259,
+    "longitude": 139.7319925
   },
   {
-    "city":"St. Louis",
-    "state":"Missouri",
-    "country":"USA",
-    "region":"North America"
+    "city": "Toronto",
+    "state": null,
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 43.653226,
+    "longitude": -79.3831843
   },
   {
-    "city":"St. Petersburg",
-    "state":"",
-    "country":"Russia",
-    "region":"Europe"
+    "city": "Trou-aux-Biches",
+    "state": null,
+    "country": "Mauritius",
+    "region": "Africa",
+    "latitude": -20.0320549,
+    "longitude": 57.55044530000001
   },
   {
-    "city":"Stellenbosch",
-    "state":"",
-    "country":"South Africa",
-    "region":"Africa"
+    "city": "Tulum",
+    "state": null,
+    "country": "Mexico",
+    "region": "North America",
+    "latitude": 20.2114185,
+    "longitude": -87.46535019999999
   },
   {
-    "city":"Sydney",
-    "state":"",
-    "country":"Australia",
-    "region":"South Pacific"
+    "city": "Ubud",
+    "state": null,
+    "country": "Indonesia",
+    "region": "Asia",
+    "latitude": -8.519268,
+    "longitude": 115.263298
   },
   {
-    "city":"Taipei",
-    "state":"",
-    "country":"Taiwan",
-    "region":"Asia"
+    "city": "Ubud",
+    "state": null,
+    "country": "Indonesia",
+    "region": "Asia",
+    "latitude": -8.519268,
+    "longitude": 115.263298
   },
   {
-    "city":"Tamarindo",
-    "state":"",
-    "country":"Costa Rica",
-    "region":"Central America"
+    "city": "Ukunda",
+    "state": null,
+    "country": "Kenya",
+    "region": "Africa",
+    "latitude": -4.283333,
+    "longitude": 39.566667
   },
   {
-    "city":"Taupo",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
+    "city": "Urubamba",
+    "state": null,
+    "country": "Peru",
+    "region": "South America",
+    "latitude": -13.3057641,
+    "longitude": -72.1156281
   },
   {
-    "city":"Tauranga",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
+    "city": "USVI",
+    "state": null,
+    "country": "USA",
+    "region": "North America",
+    "latitude": 33.8569878,
+    "longitude": -84.5904089
   },
   {
-    "city":"Tel Aviv",
-    "state":"",
-    "country":"Israel",
-    "region":"Middle East"
+    "city": "Vancouver",
+    "state": null,
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 49.2827291,
+    "longitude": -123.1207375
   },
   {
-    "city":"Todos Santos",
-    "state":"",
-    "country":"Mexico",
-    "region":"North America"
+    "city": "Venice",
+    "state": null,
+    "country": "Italy",
+    "region": "Europe",
+    "latitude": 45.4408474,
+    "longitude": 12.3155151
   },
   {
-    "city":"Tofino",
-    "state":"",
-    "country":"Canada",
-    "region":"North America"
+    "city": "Victoria",
+    "state": null,
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 48.4284207,
+    "longitude": -123.3656444
   },
   {
-    "city":"Tokyo",
-    "state":"",
-    "country":"Japan",
-    "region":"Asia"
+    "city": "Victoria Falls",
+    "state": null,
+    "country": "Zimbabwe",
+    "region": "Africa",
+    "latitude": -17.933333,
+    "longitude": 25.833333
   },
   {
-    "city":"Toronto",
-    "state":"",
-    "country":"Canada",
-    "region":"North America"
+    "city": "Vienna",
+    "state": null,
+    "country": "Austria",
+    "region": "Europe",
+    "latitude": 48.2081743,
+    "longitude": 16.3738189
   },
   {
-    "city":"Trou-aux-Biches",
-    "state":"",
-    "country":"Mauritius",
-    "region":"Africa"
+    "city": "Villa La Angostura",
+    "state": null,
+    "country": "Argentina",
+    "region": "South America",
+    "latitude": -40.7634201,
+    "longitude": -71.6461411
   },
   {
-    "city":"Tulum",
-    "state":"",
-    "country":"Mexico",
-    "region":"North America"
+    "city": "Wanaka",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -44.7031813,
+    "longitude": 169.1320981
   },
   {
-    "city":"Ubud",
-    "state":"",
-    "country":"Indonesia",
-    "region":"Asia"
+    "city": "Washington",
+    "state": "District of Columbia",
+    "country": "USA",
+    "region": "North America",
+    "latitude": 38.9071923,
+    "longitude": -77.0368707
   },
   {
-    "city":"Ubud",
-    "state":"",
-    "country":"Indonesia",
-    "region":"Asia"
+    "city": "Watamu",
+    "state": null,
+    "country": "Kenya",
+    "region": "Africa",
+    "latitude": -3.35,
+    "longitude": 40.016667
   },
   {
-    "city":"Ukunda",
-    "state":"",
-    "country":"Kenya",
-    "region":"Africa"
+    "city": "West End",
+    "state": null,
+    "country": "Honduras",
+    "region": "Central America",
+    "latitude": 16.305823,
+    "longitude": -86.59432029999999
   },
   {
-    "city":"Urubamba",
-    "state":"",
-    "country":"Peru",
-    "region":"South America"
+    "city": "West End Village",
+    "state": null,
+    "country": "Anguilla",
+    "region": "North America",
+    "latitude": 18.1715,
+    "longitude": -63.15131299999999
   },
   {
-    "city":"USVI",
-    "state":"",
-    "country":"USA",
-    "region":"North America"
+    "city": "Whistler",
+    "state": null,
+    "country": "Canada",
+    "region": "North America",
+    "latitude": 50.1163196,
+    "longitude": -122.9573563
   },
   {
-    "city":"Vancouver",
-    "state":"",
-    "country":"Canada",
-    "region":"North America"
+    "city": "Yellowstone",
+    "state": null,
+    "country": "USA",
+    "region": "North America",
+    "latitude": 44.427963,
+    "longitude": -110.588455
   },
   {
-    "city":"Venice",
-    "state":"",
-    "country":"Italy",
-    "region":"Europe"
+    "city": "Yosemite",
+    "state": null,
+    "country": "USA",
+    "region": "North America",
+    "latitude": 37.8651011,
+    "longitude": -119.5383294
   },
   {
-    "city":"Victoria",
-    "state":"",
-    "country":"Canada",
-    "region":"North America"
+    "city": "Zermatt",
+    "state": null,
+    "country": "Switzerland",
+    "region": "Europe",
+    "latitude": 46.0207248,
+    "longitude": 7.749282900000001
   },
   {
-    "city":"Victoria Falls",
-    "state":"",
-    "country":"Zimbabwe",
-    "region":"Africa"
+    "city": "Zihuatanejo",
+    "state": null,
+    "country": "Mexico",
+    "region": "North America",
+    "latitude": 17.6416693,
+    "longitude": -101.5516955
   },
   {
-    "city":"Vienna",
-    "state":"",
-    "country":"Austria",
-    "region":"Europe"
+    "city": "Zurich",
+    "state": null,
+    "country": "Switzerland",
+    "region": "Europe",
+    "latitude": 47.3686498,
+    "longitude": 8.539182499999999
   },
   {
-    "city":"Villa La Angostura",
-    "state":"",
-    "country":"Argentina",
-    "region":"South America"
+    "city": "El Chalten",
+    "state": null,
+    "country": "Argentina",
+    "region": "South America",
+    "latitude": -49.3314941,
+    "longitude": -72.886325
   },
   {
-    "city":"Wanaka",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
-  },
-  {
-    "city":"Washington",
-    "state":"District of Columbia",
-    "country":"USA",
-    "region":"North America"
-  },
-  {
-    "city":"Watamu",
-    "state":"",
-    "country":"Kenya",
-    "region":"Africa"
-  },
-  {
-    "city":"West End",
-    "state":"",
-    "country":"Honduras",
-    "region":"Central America"
-  },
-  {
-    "city":"West End Village",
-    "state":"",
-    "country":"Anguilla",
-    "region":"North America"
-  },
-  {
-    "city":"Whistler",
-    "state":"",
-    "country":"Canada",
-    "region":"North America"
-  },
-  {
-    "city":"Yellowstone",
-    "state":"",
-    "country":"USA",
-    "region":"North America"
-  },
-  {
-    "city":"Yosemite",
-    "state":"",
-    "country":"USA",
-    "region":"North America"
-  },
-  {
-    "city":"Zermatt",
-    "state":"",
-    "country":"Switzerland",
-    "region":"Europe"
-  },
-  {
-    "city":"Zihuatanejo",
-    "state":"",
-    "country":"Mexico",
-    "region":"North America"
-  },
-  {
-    "city":"Zurich",
-    "state":"",
-    "country":"Switzerland",
-    "region":"Europe"
-  },
-  {
-    "city":"El Chalten",
-    "state":"",
-    "country":"Argentina",
-    "region":"South America"
-  },
-  {
-    "city":"Milan",
-    "state":"",
-    "country":"Italy",
-    "region":"Europe"
-  },
-  {
-    "city":"Valleta",
-    "state":"",
-    "country":"Malta",
-    "region":"Europe"
-  },
-  {
-    "city":"Plovdiv",
-    "state":"",
-    "country":"Bulgaria",
-    "region":"Europe"
-  },
-  {
-    "city":"Salisbury",
-    "state":"",
-    "country":"England",
-    "region":"Europe"
-  },
-  {
-    "city":"Chennai",
-    "state":"",
-    "country":"India",
-    "region":"Asia"
-  },
-  {
-    "city":"Malaga",
-    "state":"",
-    "country":"Spain",
-    "region":"Europe"
-  },
-  {
-    "city":"Hamburg",
-    "state":"",
-    "country":"Germany",
-    "region":"Europe"
-  },
-  {
-    "city":"Nizwa",
-    "state":"",
-    "country":"Oman",
-    "region":"Middle East"
-  },
-  {
-    "city":"Wellington",
-    "state":"",
-    "country":"New Zealand",
-    "region":"South Pacific"
-  },
-  {
-    "city":"Belgrade",
-    "state":"",
-    "country":"Serbia",
-    "region":"Europe"
-  },
-  {
-    "city":"Salta",
-    "state":"",
-    "country":"Argentina",
-    "region":"South America"
-  },
-  {
-    "city":"Birmingham",
-    "state":"",
-    "country":"England",
-    "region":"Europe"
-  },
-  {
-    "city":"Yangon",
-    "state":"",
-    "country":"Myanmar",
-    "region":"Asia"
+    "city": "Milan",
+    "state": null,
+    "country": "Italy",
+    "region": "Europe",
+    "latitude": 45.4654219,
+    "longitude": 9.1859243
+  },
+  {
+    "city": "Valleta",
+    "state": null,
+    "country": "Malta",
+    "region": "Europe",
+    "latitude": 35.8989085,
+    "longitude": 14.5145528
+  },
+  {
+    "city": "Plovdiv",
+    "state": null,
+    "country": "Bulgaria",
+    "region": "Europe",
+    "latitude": 42.1354079,
+    "longitude": 24.7452904
+  },
+  {
+    "city": "Salisbury",
+    "state": null,
+    "country": "England",
+    "region": "Europe",
+    "latitude": 51.068785,
+    "longitude": -1.794472
+  },
+  {
+    "city": "Chennai",
+    "state": null,
+    "country": "India",
+    "region": "Asia",
+    "latitude": 13.0826802,
+    "longitude": 80.2707184
+  },
+  {
+    "city": "Malaga",
+    "state": null,
+    "country": "Spain",
+    "region": "Europe",
+    "latitude": 36.721261,
+    "longitude": -4.4212655
+  },
+  {
+    "city": "Hamburg",
+    "state": null,
+    "country": "Germany",
+    "region": "Europe",
+    "latitude": 53.5510846,
+    "longitude": 9.9936818
+  },
+  {
+    "city": "Nizwa",
+    "state": null,
+    "country": "Oman",
+    "region": "Middle East",
+    "latitude": 22.933333,
+    "longitude": 57.53333299999999
+  },
+  {
+    "city": "Wellington",
+    "state": null,
+    "country": "New Zealand",
+    "region": "South Pacific",
+    "latitude": -41.2864603,
+    "longitude": 174.776236
+  },
+  {
+    "city": "Belgrade",
+    "state": null,
+    "country": "Serbia",
+    "region": "Europe",
+    "latitude": 44.786568,
+    "longitude": 20.4489216
+  },
+  {
+    "city": "Salta",
+    "state": null,
+    "country": "Argentina",
+    "region": "South America",
+    "latitude": -24.7830773,
+    "longitude": -65.4103739
+  },
+  {
+    "city": "Birmingham",
+    "state": null,
+    "country": "England",
+    "region": "Europe",
+    "latitude": 52.48624299999999,
+    "longitude": -1.890401
+  },
+  {
+    "city": "Yangon",
+    "state": null,
+    "country": "Myanmar",
+    "region": "Asia",
+    "latitude": 16.780833,
+    "longitude": 96.149722
   }
 ]
