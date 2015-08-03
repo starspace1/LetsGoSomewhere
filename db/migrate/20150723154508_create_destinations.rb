@@ -5,6 +5,8 @@ class CreateDestinations < ActiveRecord::Migration
       t.string :state
       t.string :country
       t.string :region
+      t.float  :latitude
+      t.float  :longitude
 
       t.timestamps null: false
     end

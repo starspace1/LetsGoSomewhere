@@ -24,7 +24,37 @@
 
 $(document).on('ready page:load', function() {
 
-  $('#world-map').vectorMap();
+
+  if( $('#world-map').length > 0 )
+  {
+    $.getJSON('/interests/edit.json', function(data){
+      
+      var map =  new jvm.WorldMap({
+
+        onRegionClick: function(e, code) {
+          alert("You clicked "+code);
+        },
+
+        container: $('#world-map'),
+
+        markerStyle: {
+          initial: {
+            fill: '#F8E23B',
+            stroke: '#383f47'
+          }
+        },
+
+        series: {
+          regions: [{
+            attribute: 'fill'
+          }]
+        },
+
+        markers: data
+
+      });
+    });
+  }
 
   $('#calendar').fullCalendar({
 

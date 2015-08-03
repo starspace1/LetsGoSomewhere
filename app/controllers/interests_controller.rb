@@ -1,6 +1,7 @@
 class InterestsController < ApplicationController
   def edit
     @user = current_user
+    @destinations = Destination.all
   end
 
   def update
