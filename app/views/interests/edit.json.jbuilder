@@ -1,6 +1,9 @@
-json.array!(@destinations) do |destination|
-  json.extract! destination, :id
+json.all_markers @destinations do |destination|
+  json.id destination.id
   json.name destination.to_s
   json.latLng [destination.latitude, destination.longitude]
-  json.selected @user.interested_in? destination.id
+end
+
+json.selected_markers do
+  json.array! @selected_destination_ids
 end
