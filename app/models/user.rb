@@ -9,16 +9,8 @@ class User < ActiveRecord::Base
   has_many :destinations, through: :interests
   has_many :busy_intervals
 
-  def interested_in? destination
-    # TODO find out best practices for this ...
-    # don't know how to do with a non strong typed language
-    if id.is_a? Fixnum
-      destination_ids.include? destination
-    elsif id.is_a? String
-      destinations.exists?(city: destination)
-    elsif id.is_a? Destination
-      destinations.include? destination
-    end
+  def interested_in? destination_id
+    destination_ids.include? destination_id
   end
 
   def earliest_trip_date

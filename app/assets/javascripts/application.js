@@ -64,7 +64,7 @@ $(document).on('ready page:load', function() {
         selectedMarkers: selected_markers,
 
         onMarkerClick: function(e, code) {
-          $.post( "/interests/add", { id: all_markers[code].id } );
+          $.post( "/interests/toggle", { id: all_markers[code].id } );
           console.log("You clicked "+all_markers[code].name+", id: "+all_markers[code].id);
         }
 

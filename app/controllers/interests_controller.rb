@@ -12,10 +12,15 @@ class InterestsController < ApplicationController
     redirect_to root_path, notice: "Success! Updated your destinations."
   end
 
-  def add
+  def toggle
     new_destination = Destination.find(params[:id])
-    # TODO remove interest if it's already user's destination list
-    current_user.destinations << new_destination
+    if current_user.interested_in? new_destination.id
+      # Remove interest if it's already user's destination list
+      current_user.destinations.delete(new_destination)
+    else
+      # Otherwise, add it
+      current_user.destinations << new_destination
+    end
     # TODO flash now new_destination added
     render :map
   end
