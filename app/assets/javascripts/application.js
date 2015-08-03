@@ -16,10 +16,61 @@
 //= require bootstrap-sprockets
 //= require fullcalendar
 //= require bootstrap-datepicker
+//= require jvectormap
+//= require jvectormap/maps/us_merc_en
+//= require jvectormap/maps/world_mill_en
 //= require_tree .
 
 
 $(document).on('ready page:load', function() {
+
+
+  if( $('#world-map').length > 0 )
+  {
+    $.getJSON('/interests/edit.json', function(data){
+
+      all_markers = data["all_markers"];
+      selected_markers = data["selected_markers"];
+      
+      console.log(selected_markers);
+
+      var map =  new jvm.WorldMap({
+
+        onRegionClick: function(e, code) {
+          console.log("You clicked "+code);
+        },
+
+        container: $('#world-map'),
+
+        markersSelectable: true,
+
+        regionsSelectable: true,
+
+        markerStyle: {
+          initial: {
+            fill: '#F8E23B',
+            stroke: '#383f47'
+          }
+        },
+
+        series: {
+          regions: [{
+            attribute: 'fill'
+          }]
+        },
+
+        markers: all_markers,
+
+        selectedMarkers: selected_markers,
+
+        onMarkerClick: function(e, code) {
+          $.post( "/interests/toggle", { id: all_markers[code].id } );
+          console.log("You clicked "+all_markers[code].name+", id: "+all_markers[code].id);
+        }
+
+      });
+    });
+  }
 
   $('#calendar').fullCalendar({
 

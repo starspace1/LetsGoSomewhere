@@ -68,3 +68,5 @@ gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 
 gem 'google-api-client', require: 'google/api_client'
+
+gem 'jvectormap-rails', '~> 1.0.0' 

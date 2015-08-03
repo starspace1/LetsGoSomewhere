@@ -9,6 +9,10 @@ class User < ActiveRecord::Base
   has_many :destinations, through: :interests
   has_many :busy_intervals
 
+  def interested_in? destination_id
+    destination_ids.include? destination_id
+  end
+
   def earliest_trip_date
     if trips.any?
       trips.pluck(:start_date).min
