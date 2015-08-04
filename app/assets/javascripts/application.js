@@ -102,6 +102,7 @@ $(document).on('ready page:load', function() {
   if( $('#free_calendar').length > 0 )
   {
     $('#free_calendar').fullCalendar({
+      // TODO don't need this super secret div, can just get current url and add .json
       events: $('#free_calendar_url').attr('value')
     });
 

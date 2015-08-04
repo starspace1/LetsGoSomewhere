@@ -21,7 +21,6 @@ class InterestsController < ApplicationController
       # Otherwise, add it
       current_user.destinations << new_destination
     end
-    # TODO flash now new_destination added
     render :map
   end
 
