@@ -15,8 +15,10 @@
     <!-- TODO sort of scrolling or format adjustment for when there are lots of friends -->
     <ul class="list-group">
       <% @trip.users.each do |user| %>
-        <% unless user.invitation_token %>
-        <!-- TODO list users with pending invitations in italics -->
+        <% if user.invitation_token %>
+        <!-- Display users who have been invited to join the group in italics -->
+          <em><li class="list-group-item"><%= link_to user.email, user_path(user) %> (pending) </li></em>
+        <% else %>
           <li class="list-group-item"><%= link_to user.email, user_path(user) %></li>
         <% end %>
       <% end %>
@@ -24,10 +26,15 @@
     <p><%= link_to "Invite a friend!", trip_invite_path(@trip), class: "btn btn-default btn" %></p>
 
     <h4>Potential Destinations:</h4>
-    <!-- TODO say something if there is no destination interest overlap between users -->
     <ul class="list-group">
-      <% @trip.destination_ids.each do |id| %>
-        <li class="list-group-item"><%= Destination.find(id) %></li>
+      <% if @trip.destination_ids.empty? %>
+        <em><small>
+          Oh no! Looks like there are no possibilities so far. Make sure all group members have added the destinations they are interested in. 
+        </em></small>
+      <% else %>
+        <% @trip.destination_ids.each do |id| %>
+          <li class="list-group-item"><%= Destination.find(id) %></li>
+        <% end %>
       <% end %>
     </ul>
 
