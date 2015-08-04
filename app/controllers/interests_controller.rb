@@ -9,7 +9,7 @@ class InterestsController < ApplicationController
   def update
     @user = current_user
     @user.update(params.require(:user).permit(:destination_ids => []))
-    redirect_to root_path, notice: "Success! Updated your destinations."
+    render :edit
   end
 
   def toggle

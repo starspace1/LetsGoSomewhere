@@ -24,7 +24,6 @@
 
 $(document).on('ready page:load', function() {
 
-
   if( $('#world-map').length > 0 )
   {
     $.getJSON('/interests/edit.json', function(data){
@@ -117,5 +116,9 @@ $(document).on('ready page:load', function() {
       events: $('#user_calendar_url').attr('value')
     }); 
   }
+
+  $("#edit_destinations").on("click", '.destination-toggle', function(){
+    $(this).parents('form').submit();
+  });
   
 });
