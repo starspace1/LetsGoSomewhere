@@ -1,63 +1,21 @@
-
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1><%= @trip.name %></h1>
-      <hr>
+      <h1><%= @trip.name %></h1><hr>
     </div>
   </div>
 </div>
-
 <div class="container">
-<div class="row">
-  <div class="col-sm-4">
-    <h4>Trip members:</h4>
-    <!-- TODO sort of scrolling or format adjustment for when there are lots of friends -->
-    <ul class="list-group">
-      <% @trip.users.each do |user| %>
-        <% unless user.invitation_token %>
-        <!-- TODO list users with pending invitations in italics -->
-          <li class="list-group-item"><%= link_to user.email, user_path(user) %></li>
-        <% end %>
-      <% end %>
-    </ul>
-    <p><%= link_to "Invite a friend!", trip_invite_path(@trip), class: "btn btn-default btn" %></p>
-
-    <h4>Potential Destinations:</h4>
-    <!-- TODO say something if there is no destination interest overlap between users -->
-    <ul class="list-group">
-      <% @trip.destination_ids.each do |id| %>
-        <li class="list-group-item"><%= Destination.find(id) %></li>
-      <% end %>
-    </ul>
-
-    <p><%= link_to "Leave trip", trip_leave_path(@trip), data: {confirm: "Are you sure?"}, class: "btn btn-default btn" %></p>
+  <div class="row">
+    <div class="col-sm-4">
+      <%= render 'members' %>
+      <p><%= link_to "Invite a friend!", trip_invite_path(@trip), class: "btn btn-default btn" %></p>
+      <%= render 'potential_destinations' %>
+      <p><%= link_to "Leave trip", trip_leave_path(@trip), data: {confirm: "Are you sure?"}, class: "btn btn-default btn" %></p>
+    </div>
+    <div class="col-sm-8">
+      <%= render 'free_calendar' %>
+      <%= render 'date_constraints' %>
+    </div>
   </div>
-
-  <div class="col-sm-8">
-    <!-- TODO merge the free intervals maybe -->
-    <!-- TODO change the calendar display month to the month of @trip.start_date -->
-    <!-- TODO only do queries when changing calendar view -->
-    <h4>Free Dates:</h4>
-    <div id='free_calendar'></div>
-    <div id='free_calendar_url' value="<%= trip_path(@trip)%>.json"></div>
-    <br>
-    <p>Trip will be sometime between:</p>
-    <!-- TODO add little calendar glyphicon -->
-    <!-- TODO make this calendar automatically jump to end date when you select start date -->
-    <%= form_tag(trip_update_date_constraints_path(@trip)) do %>
-      <div class="form-group">
-        <container id="my_datepicker">
-          <div class="input-daterange input-group" id="datepicker">
-            <input type="text" class="input-sm form-control" name="start_date" value=<%= @trip.start_date %> />
-            <span class="input-group-addon">and</span>
-            <input type="text" class="input-sm form-control" name="end_date" value=<%= @trip.end_date %> />
-          </div>
-        </container>
-      </div>
-      <button type="submit" class="btn btn-default btn-sm">Update</button>
-    <% end %>
-
-  </div>
-</div>
 </div>

@@ -25,6 +25,7 @@ class TripsController < ApplicationController
     @user = User.invite!({:email => params[:email]}, current_user)
     @user.trips << @trip
     redirect_to trip_path(@trip), notice: "Success! Invited #{params[:email]} to trip."
+    # TODO send email to that person
   end
 
   def leave

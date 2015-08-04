@@ -13,6 +13,10 @@ class User < ActiveRecord::Base
     destination_ids.include? destination_id
   end
 
+  def shares_trip_with? other_user
+    !(trip_ids & other_user.trip_ids).empty?
+  end
+
   def earliest_trip_date
     if trips.any?
       trips.pluck(:start_date).min

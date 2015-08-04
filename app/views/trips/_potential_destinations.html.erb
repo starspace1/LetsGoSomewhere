@@ -1,0 +1,13 @@
+<h4>Potential Destinations:</h4>
+<ul class="list-group">
+  <% if @trip.destination_ids.empty? %>
+    <em><small>
+      Oh no! Looks like there are no possibilities so far. 
+      Make sure all group members have added the destinations they are interested in. 
+    </em></small>
+  <% else %>
+    <% @trip.destination_ids.each do |id| %>
+      <li class="list-group-item"><%= Destination.find(id) %></li>
+    <% end %>
+  <% end %>
+</ul>

@@ -103,7 +103,11 @@ $(document).on('ready page:load', function() {
   {
     $('#free_calendar').fullCalendar({
       events: $('#free_calendar_url').attr('value')
-    }); 
+    });
+
+    start_date = $('#free_calendar_start').attr('value');
+    
+    $('#free_calendar').fullCalendar( 'gotoDate', start_date )
   }
 
   if( $('#user_calendar').length > 0 )

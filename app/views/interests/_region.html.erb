@@ -1,0 +1,16 @@
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse<%=region.gsub(' ','')%>"><%= region %></a>
+            </h4>
+          </div>  
+          <div id="collapse<%=region.gsub(' ','')%>" class="panel-collapse collapse">
+            <div class="panel-body">
+              <%= collection_check_boxes(:user, :destination_ids, Destination.where(region: region), :id, :city) do |b| %>
+                <%= b.label(class: "checkbox-inline") do %>
+                  <%= b.check_box() %> <%= b.object %>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+        </div>
