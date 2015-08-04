@@ -31,7 +31,7 @@ class BusyInterval < ActiveRecord::Base
     sorted_intervals.each do |interval|
       # Get the interval with the earliest start time
       top = merged_intervals.first()
-      if top.end_date < interval.start_date
+      if top.end_date < interval.start_date - 1
         # This interval isn't overlapping with top
         # Add to merged intervals
         merged_intervals.unshift(interval)
@@ -43,7 +43,6 @@ class BusyInterval < ActiveRecord::Base
         merged_intervals.unshift(top)
       end
     end
-    puts merged_intervals.reverse
     # Return the array of merged intervals 
     # Reverse it so it's sorted by start date
     merged_intervals.reverse!

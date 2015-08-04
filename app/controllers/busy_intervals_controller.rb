@@ -1,6 +1,6 @@
 class BusyIntervalsController < ApplicationController
   def index
-    @busy_intervals = current_user.busy_intervals
+    @busy_intervals = current_user.busy_intervals.merged_intervals
   end
 
   def create
@@ -22,8 +22,6 @@ class BusyIntervalsController < ApplicationController
     gcal = GoogleCalendar.new
     gcal.set_access_token(session[:access_token])
     @busy_dates = gcal.busy_dates(current_user.earliest_trip_date, current_user.latest_trip_date)
-
-    # TODO merge busy intervals
     @busy_dates.each do |date|
       current_user.busy_intervals.create(start_date: date['start'], end_date: date['end'])
     end
