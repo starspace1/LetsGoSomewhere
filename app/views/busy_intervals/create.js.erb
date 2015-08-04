@@ -1,14 +1,3 @@
-<% if @busy_interval %>
-
-  $('#calendar').fullCalendar('renderEvent', {
-                          id: <%= @busy_interval.id %>,
-                          title: 'Busy',
-                          start: "<%= @busy_interval.start_date %>",
-                          end: "<%= @busy_interval.end_date %>",
-                          allDay: true,
-                          rendering: "background",
-                          color: "red",
-                          backgroundColor: "red"
-                      }, false );
-<% end %>
+// TODO restrict to only re-render events that just changed
+$('#calendar').fullCalendar( 'refetchEvents' )
 
