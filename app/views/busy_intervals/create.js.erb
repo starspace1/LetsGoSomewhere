@@ -1,11 +1,5 @@
 <% if @busy_interval %>
 
-  // If the event already exists on the calendar, remove it so we can re-render it
-  // with the proper start and end
-  if ($('#calendar').fullCalendar( 'clientEvents' [<%= @busy_interval.id %>] )) {
-    $('#calendar').fullCalendar( 'removeEvents', [<%= @busy_interval.id %>] );
-  }
-  
   $('#calendar').fullCalendar('renderEvent', {
                           id: <%= @busy_interval.id %>,
                           title: 'Busy',

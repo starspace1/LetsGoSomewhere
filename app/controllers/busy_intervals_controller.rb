@@ -5,7 +5,7 @@ class BusyIntervalsController < ApplicationController
 
   def create
     @date = DateTime.iso8601(params[:date])
-    @busy_interval = current_user.mark_as_busy(@date)
+    @busy_interval = current_user.busy_intervals.create(start_date: @date, end_date: @date)
   end
 
   def edit

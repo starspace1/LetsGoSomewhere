@@ -2,24 +2,6 @@ class BusyInterval < ActiveRecord::Base
   validates_presence_of :start_date, :end_date
   belongs_to :user
 
-  def contains? date
-    start_date < date + 1 && date < end_date
-  end
-
-  def adjacent_to? date
-    start_date == date + 1 || end_date == date
-  end
-
-  def extend_interval date
-    if start_date == date + 1
-      # date is before interval, push back start_date
-      update_attribute(:start_date, date)
-    elsif end_date == date
-      # date is after interval, push forward end_date
-     update_attribute(:end_date, date + 1)
-    end
-  end
-
   def to_s
     "#{start_date} to #{end_date}"
   end
