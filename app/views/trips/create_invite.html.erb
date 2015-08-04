@@ -1,14 +1,12 @@
 <!-- TODO make sure there are labels for every form input -->
-<!-- TODO make form bigger, add padding -->
-<%= form_tag(trip_invite_path(@trip), method: :post) do %>
+<div class="form-group">
+  <%= form_tag(trip_invite_path(@trip), method: :post) do %>
   <fieldset>
     <legend>Invite a friend!</legend>
-    <div>
       <%= label_tag :email, 'Email:' %>
-      <%= text_field_tag :email, params[:email] %>
-    </div>
-    <div>
-      <%= submit_tag "Send", class: "btn btn-default"  %>
-    </div>
+      <%= text_field_tag :email, params[:email], class: "form-control" %><br>
+      <%= submit_tag "Send", class: "btn btn-default" %>
+      <%= link_to "Back", trip_path(@trip), class: "btn btn-default" %>
   </fieldset>
-<% end %>
+  <% end %>
+</div>
