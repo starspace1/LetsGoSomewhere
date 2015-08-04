@@ -17,25 +17,19 @@ class BusyInterval < ActiveRecord::Base
     sorted_intervals.each do |interval|
       # Get the interval with the earliest start time
       top = merged_intervals.first()
-      # puts "Comparing intervals #{top.id} and #{interval.id}"
-      # puts "Top: #{top}"
-      # puts "Interval: #{interval}"
       if top.end_date < interval.start_date - 1
-        # This interval isn't overlapping with top
-        # Add to merged intervals
-        # puts "Intervals do not overlap. Keep both."
+        # Intervals do not overlap. Keep both.
         merged_intervals.unshift(interval)
       elsif top.end_date < interval.end_date
         # This interval is overlapping with top
-        # Update the end_date of top 
-        # puts "Intervals overlap. Update interval #{top.id} and remove interval #{interval.id}."
+        # Update the end_date of top and remove interval
         top.end_date = interval.end_date
         merged_intervals.shift
         merged_intervals.unshift(top)
         BusyInterval.find(top.id).update(end_date: interval.end_date)
         BusyInterval.find(interval.id).destroy
       elsif interval.contained_in?(top)
-        # puts "Interval #{interval.id} is completely contained within interval #{top.id}. Remove interval #{interval.id}."
+        # Interval is completely contained within top. Remove interval.
         BusyInterval.find(interval.id).destroy
       end
     end
