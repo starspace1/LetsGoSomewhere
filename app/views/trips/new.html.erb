@@ -10,6 +10,7 @@
   <p>
     <%= f.text_field :start_date, :class => 'datepicker', value: Date.today %>
     and
+    <!-- TODO make this jump to picked start date -->
     <%= f.text_field :end_date, :class => 'datepicker', value: Date.today.next_month(3) %>
   </p>
   <p>

@@ -1,5 +1,5 @@
 <!-- TODO merge the free intervals maybe -->
-<!-- TODO change the calendar display month to the month of @trip.start_date -->
 <!-- TODO only do queries when changing calendar view -->
 <div id='free_calendar'></div>
 <div id='free_calendar_url' value="<%= trip_path(@trip)%>.json"></div>
+<div id='free_calendar_start' value="<%= @trip.start_date.beginning_of_month %>"></div>
