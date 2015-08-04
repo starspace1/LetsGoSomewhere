@@ -10,7 +10,7 @@ class BusyInterval < ActiveRecord::Base
     (start_date >= other_interval.start_date) && (end_date <= other_interval.end_date)
   end
 
-  def self.merge_intervals
+  def self.merge_intervals!
     sorted_intervals = self.order(:start_date).to_a
     merged_intervals = []
     merged_intervals.unshift(sorted_intervals.shift)

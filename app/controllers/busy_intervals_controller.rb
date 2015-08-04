@@ -7,7 +7,7 @@ class BusyIntervalsController < ApplicationController
     @date = DateTime.iso8601(params[:date])
     # TODO don't even add this interval if already contained in current_user.busy_intervals
     @busy_interval = current_user.busy_intervals.create(start_date: @date, end_date: @date)
-    current_user.busy_intervals.merge_intervals
+    current_user.busy_intervals.merge_intervals!
   end
 
   def edit
@@ -27,7 +27,7 @@ class BusyIntervalsController < ApplicationController
     @busy_dates.each do |date|
       current_user.busy_intervals.create(start_date: date['start'], end_date: date['end'])
     end
-    current_user.busy_intervals.merge_intervals
+    current_user.busy_intervals.merge_intervals!
     redirect_to busy_intervals_path, notice: "Success! We imported your Google Calendar!" 
   end
 
