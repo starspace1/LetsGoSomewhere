@@ -68,6 +68,9 @@ $(document).on('ready page:load', function() {
         }
 
       });
+
+      $('#world-map').hide();
+      
     });
   }
 
