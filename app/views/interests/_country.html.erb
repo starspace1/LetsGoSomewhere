@@ -1,0 +1,5 @@
+<%= collection_check_boxes(:user, :destination_ids, Destination.where(country: country), :id, :city) do |b| %>
+  <%= b.label(class: "checkbox-inline") do %>
+    <%= b.check_box(class: "destination-toggle") %> <%= b.object.city %>
+  <% end %>
+<% end %>
