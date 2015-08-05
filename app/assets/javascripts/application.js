@@ -24,6 +24,23 @@
 
 $(document).on('ready page:load', function() {
 
+  $(".region-panel-link").on("click", function(){
+
+    panel_title = $(this).parents('.panel-title').find('.glyphicon');
+
+    if( panel_title.hasClass('glyphicon-menu-right') )
+    {
+      panel_title.removeClass('glyphicon-menu-right');
+      panel_title.addClass('glyphicon-menu-down');
+    }
+    else
+    {
+      panel_title.removeClass('glyphicon-menu-down');
+      panel_title.addClass('glyphicon-menu-right');
+    }
+
+  });
+
   if( $('#world-map').length > 0 )
   {
     $.getJSON('/interests/edit.json', function(data){
