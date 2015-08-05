@@ -21,9 +21,12 @@ class InterestsController < ApplicationController
       # Otherwise, add it
       current_user.destinations << new_destination
     end
-    render :map
+    render :edit
   end
 
   def map
+  end
+
+  def list
   end
 end

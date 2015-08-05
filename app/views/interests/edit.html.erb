@@ -1,10 +1,3 @@
 <%= render 'header' %>
-<!-- TODO add little dropdown glyphicons -->
-<!-- TODO break down by country -->
-<%= form_tag(interests_update_path, method: :post, remote: :true) do %>
-  <div class="panel-group" id="edit_destinations">
-    <% Destination.regions.each do |region| %>
-      <%= render partial: 'region', locals: {region: region} %>
-    <% end %>
-  </div>
-<% end %>
+<%= render 'list' %>
+<%= render 'map' %>
