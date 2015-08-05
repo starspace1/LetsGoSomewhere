@@ -49,17 +49,29 @@ class GoogleCalendar
     result.data.id
   end
 
-  def busy_dates(time_min, time_max)
-    # TODO google api only allows get free/busy for 3 month chunks...deal with this
+  def busy_dates(start_date, end_date)
+    return date_query(start_date, end_date) if end_date <= start_date + 3.months
+    return_array = []
+    t_min = start_date
+    t_max = t_min + 3.months
+    while t_max < end_date
+      return_array += date_query(t_min, t_max)
+      t_min = t_max + 1.day
+      t_max = t_min + 3.months
+    end
+    return_array += date_query(t_min, end_date)
+  end
+
+  def date_query(t1, t2)
     response = @client.execute(
       api_method: cal_api.freebusy.query,
       body: JSON.dump({
-        timeMin: time_min.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
-        timeMax: time_max.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
+        timeMin: t1.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
+        timeMax: t2.strftime("%Y-%m-%dT%H:%M:%S.000Z"),
+        timeZone: "EST",
         items: [{id: primary_calendar_id}]
         }),
       headers: {'Content-Type' => 'application/json'})
-
     response.data["calendars"][primary_calendar_id]["busy"]
   end
 end
