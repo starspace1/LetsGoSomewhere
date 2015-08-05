@@ -67,10 +67,7 @@ $(document).on('ready page:load', function() {
           console.log("You clicked "+all_markers[code].name+", id: "+all_markers[code].id);
         }
 
-      });
-
-      $('#world-map').hide();
-      
+      });      
     });
   }
 

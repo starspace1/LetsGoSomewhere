@@ -28,5 +28,9 @@ class InterestsController < ApplicationController
   end
 
   def list
+    @user = current_user
+    @destinations = Destination.all
+    # For some reason the selected marker ids are shifted by 1 in jvectormap
+    @selected_destination_ids = @user.destination_ids.map { |i| i - 1 }
   end
 end
