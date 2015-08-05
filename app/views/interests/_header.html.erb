@@ -1,4 +1,6 @@
 <h2>Update Destinations</h2> 
-<!-- TODO turn into bootstrap nav-tabs -->
-<%= link_to_unless_current "List", interests_edit_path, class: "btn btn-default btn" %>
-<%= link_to_unless_current "Map", interests_map_path, class: "btn btn-default btn" %><br><br>
+<ul class="nav nav-tabs">
+  <!-- TODO move the "active" class -->
+  <li id="destination_edit_list" class="active"><%= link_to "List", interests_list_path %></li>
+  <li id="destination_edit_map" ><%= link_to "Map", interests_map_path %></li>
+</ul>

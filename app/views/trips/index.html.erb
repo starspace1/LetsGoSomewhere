@@ -13,7 +13,7 @@
       <!-- TODO add text if no destinations have been chosen yet -->
       <!-- TODO photo carousel of photos from user's destinations -->
       <%= render partial: 'shared/destinations', locals: {destinations: current_user.destinations} %>
-      <%= link_to "Update Destinations", interests_edit_path, class: "btn btn-default" %> <br>
+      <%= link_to "Update Destinations", interests_list_path, class: "btn btn-default" %> <br>
     </div>
   </div>
 </div>

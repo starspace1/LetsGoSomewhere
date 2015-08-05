@@ -10,4 +10,8 @@ class Destination < ActiveRecord::Base
   def self.regions
     Destination.all.pluck(:region).uniq
   end
+
+  def self.countries(region)
+    Destination.where(region: region).pluck(:country).uniq
+  end
 end

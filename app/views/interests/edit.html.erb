@@ -1,12 +1,4 @@
 <%= render 'header' %>
-<!-- TODO add little dropdown glyphicons -->
-<!-- TODO break down by country -->
-<%= form_tag(interests_update_path, method: :post) do %>
-  <div class="panel-group">
-    <% Destination.regions.each do |region| %>
-      <%= render partial: 'region', locals: {region: region} %>
-    <% end %>
-  </div>
-  <%= submit_tag "Update", class: "btn btn-default" %>
-<% end %>
-<!-- TODO add jquery to submit form every time a box is checked/unchecked -->
+<%= render 'list' %>
+<%= render 'map' %>
+<!-- TODO add ability to clear destinations (reset all) -->

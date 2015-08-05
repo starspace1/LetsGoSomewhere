@@ -9,7 +9,7 @@ class InterestsController < ApplicationController
   def update
     @user = current_user
     @user.update(params.require(:user).permit(:destination_ids => []))
-    redirect_to root_path, notice: "Success! Updated your destinations."
+    render :edit
   end
 
   def toggle
@@ -21,9 +21,16 @@ class InterestsController < ApplicationController
       # Otherwise, add it
       current_user.destinations << new_destination
     end
-    render :map
+    render :edit
   end
 
   def map
+  end
+
+  def list
+    @user = current_user
+    @destinations = Destination.all
+    # For some reason the selected marker ids are shifted by 1 in jvectormap
+    @selected_destination_ids = @user.destination_ids.map { |i| i - 1 }
   end
 end

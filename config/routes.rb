@@ -9,9 +9,10 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show]
 
-  get 'interests/edit'
+  get  'interests/edit'
   post 'interests/update'
-  get 'interests/map'
+  get  'interests/map'
+  get  'interests/list'
   post 'interests/toggle'
 
   get 'oauth/authorize'

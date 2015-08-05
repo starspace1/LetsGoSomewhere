@@ -24,6 +24,22 @@
 
 $(document).on('ready page:load', function() {
 
+  $(".region-panel-link").on("click", function(){
+
+    panel_title = $(this).parents('.panel-title').find('.glyphicon');
+
+    if( panel_title.hasClass('glyphicon-menu-right') )
+    {
+      panel_title.removeClass('glyphicon-menu-right');
+      panel_title.addClass('glyphicon-menu-down');
+    }
+    else
+    {
+      panel_title.removeClass('glyphicon-menu-down');
+      panel_title.addClass('glyphicon-menu-right');
+    }
+
+  });
 
   if( $('#world-map').length > 0 )
   {
@@ -68,8 +84,17 @@ $(document).on('ready page:load', function() {
           console.log("You clicked "+all_markers[code].name+", id: "+all_markers[code].id);
         }
 
-      });
+      });      
     });
+
+    $('#destination_edit_map').addClass('active');
+    $('#destination_edit_list').removeClass('active');
+  }
+
+  if ( $('#world-list').length > 0 )
+  {
+    $('#destination_edit_map').removeClass('active');
+    $('#destination_edit_list').addClass('active');
   }
 
   $('#calendar').fullCalendar({
@@ -117,5 +142,9 @@ $(document).on('ready page:load', function() {
       events: $('#user_calendar_url').attr('value')
     }); 
   }
+
+  $("#edit_destinations").on("click", '.destination-toggle', function(){
+    $(this).parents('form').submit();
+  });
   
 });
