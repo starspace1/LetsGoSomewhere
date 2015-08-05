@@ -69,6 +69,15 @@ $(document).on('ready page:load', function() {
 
       });      
     });
+
+    $('#destination_edit_map').addClass('active');
+    $('#destination_edit_list').removeClass('active');
+  }
+
+  if ( $('#world-list').length > 0 )
+  {
+    $('#destination_edit_map').removeClass('active');
+    $('#destination_edit_list').addClass('active');
   }
 
   $('#calendar').fullCalendar({
