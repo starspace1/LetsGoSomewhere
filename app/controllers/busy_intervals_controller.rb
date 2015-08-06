@@ -1,5 +1,6 @@
 class BusyIntervalsController < ApplicationController
   def index
+    # TODO jump to date of earliest trip
     @busy_intervals = current_user.busy_intervals
   end
 

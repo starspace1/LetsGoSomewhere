@@ -17,9 +17,10 @@
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
         <!-- TODO add "active" highlights to these links -->
+        <!-- TODO add dropdowns to view your trips and destinations if not on homepage -->
           <li class="navbar-text">Logged in as <strong><%= current_user.email %></strong>.</li>
+          <li><%= link_to 'Home', root_path, class: 'navbar-link' %></li>
           <li><%= link_to "Calendar", busy_intervals_path, class: 'navbar-link' %></li>
-          <li><%= link_to 'Edit profile', edit_user_registration_path, class: 'navbar-link' %></li>
           <li><%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'navbar-link' %></li>
         <% else %>
           <li><%= link_to "Sign up", new_user_registration_path, class: 'navbar-link' %></li>
