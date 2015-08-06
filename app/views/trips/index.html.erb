@@ -4,15 +4,22 @@
       <h3>My Trips</h3>
        <!-- TODO add text if no trips have been chosen yet -->
       <ul class="list-group">
+      <% if @trips.any? %>
         <%= render @trips %> 
+      <% else %>
+        <p><em> No trips yet! Click below to create a new trip. </em></p>
+      <% end %>
       </ul>
       <%= link_to "New Trip", new_trip_path, class: "btn btn-default" %>
     </div>
     <div class="col-sm-8 col-xs-12">
       <h3>My Destinations</h3>
-      <!-- TODO add text if no destinations have been chosen yet -->
       <!-- TODO photo carousel of photos from user's destinations -->
-      <%= render partial: 'shared/destinations', locals: {destinations: current_user.destinations} %>
+      <% if current_user.destinations.any? %>
+        <%= render partial: 'shared/destinations', locals: {destinations: current_user.destinations} %>
+      <% else %>
+        <p><em> No destinations yet! Click below to add the destinations you're interested in visiting. </em></p>
+      <% end %>
       <%= link_to "Update Destinations", interests_list_path, class: "btn btn-default" %> <br>
     </div>
   </div>
