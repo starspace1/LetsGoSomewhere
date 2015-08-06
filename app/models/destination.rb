@@ -8,10 +8,10 @@ class Destination < ActiveRecord::Base
   end
 
   def self.regions
-    Destination.all.pluck(:region).uniq
+    Destination.all.pluck(:region).uniq.sort
   end
 
   def self.countries(region)
-    Destination.where(region: region).pluck(:country).uniq
+    Destination.where(region: region).pluck(:country).uniq.sort
   end
 end
