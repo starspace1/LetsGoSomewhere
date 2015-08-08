@@ -1,5 +1,7 @@
-<h3><%= @user.email %> is interested in the following destinations:</h3>
-<%= render partial: 'shared/destinations', locals: {destinations: @user.destinations} %>
-<h3><%= @user.email %> is busy on the following dates:</h3>
-<div id='user_calendar'></div>
-<div id='user_calendar_url' value="<%= user_path(@user)%>.json"></div>
+<div class="blacky container">
+  <h3><%= @user.email %> is interested in the following destinations:</h3>
+  <%= render partial: 'shared/destinations', locals: {destinations: @user.destinations} %>
+  <h3><%= @user.email %> is busy on the following dates:</h3>
+  <div id='user_calendar'></div>
+  <div id='user_calendar_url' value="<%= user_path(@user)%>.json"></div>
+</div>

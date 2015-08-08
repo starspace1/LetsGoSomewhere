@@ -19,14 +19,63 @@
 @import "bootstrap-sprockets"
 @import "bootstrap"
 
+$primary-text-color: white
+
 body
   font-family: 'Raleway'
   margin-bottom: 20px
+  background-image: url(overlay.png), url(kotor.jpg)
+  background-position: center center
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-size: cover
+
+h1, h2, h3, h4, h5
+  color: $primary-text-color
+
+label
+  color: $primary-text-color
+
+.jumbotron
+  color: $primary-text-color
+  padding-top: 10%
 
 #world-map
   width: 100%
   height: 75vh
+  background: transparent
 
 .jvectormap-label
   position: absolute
   display: none
+
+.list-group-item
+  background: transparent
+  border-style: none
+  color: $primary-text-color
+
+.transparent
+  background: transparent
+
+.btn
+  color: $primary-text-color
+  background: transparent
+
+.blacky
+  background-color: rgba(0,0,0,0.5)
+  padding-bottom: 10px
+
+.navbar
+  border-style: none
+  
+.nav.navbar-nav.navbar-right li a
+  color: $primary-text-color
+
+.navbar-default a.navbar-brand
+  color: $primary-text-color
+
+.nav.navbar-nav.navbar-right li.navbar-text
+  color: $primary-text-color
+
+.fc-content
+  color: $primary-text-color
