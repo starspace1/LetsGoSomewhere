@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root 'trips#index'
+  root 'static#index'
 
   resources :busy_intervals, only: [:index, :create, :edit, :destroy]
   get 'busy_intervals/import'
