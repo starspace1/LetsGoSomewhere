@@ -58,6 +58,8 @@ $(document).on('ready page:load', function() {
 
         container: $('#world-map'),
 
+        backgroundColor: "transparent",
+
         markersSelectable: true,
 
         regionsSelectable: true,
