@@ -8,7 +8,7 @@
   <div id="collapse<%=region.gsub(' ','')%>" class="panel-collapse collapse">
     <div class="panel-body">
       <% Destination.countries(region).each do |country| %>
-        <h5><%= "#{country}: " %></h5>
+        <h4><%= "#{country}: " %></h4>
         <%= render partial: 'country', locals: {country: country} %>
         <br>
       <% end %>
