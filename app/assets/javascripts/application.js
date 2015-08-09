@@ -62,8 +62,6 @@ $(document).on('ready page:load', function() {
 
         markersSelectable: true,
 
-        regionsSelectable: true,
-
         markerStyle: {
           initial: {
             fill: '#F8E23B',
