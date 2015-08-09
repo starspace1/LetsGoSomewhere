@@ -1,14 +1,18 @@
 <!-- TODO add ability to click and drag to select multiple busy dates -->
 <div class="blacky container">
-<div class="col-sm-12">
-  <h3>Click on unavailable dates</h3>
-</div>
-<div class="col-sm-8 col-xs-12">
-  <div id='calendar'></div>
-</div>
-<div class="col-sm-2 col-xs-12">
-  <p><%= link_to 'Import from Google Calendar', oauth_authorize_path, class: "btn btn-default" %></p>
-  <p><%= link_to "Update", root_path, class: "btn btn-default" %></p>
-  <p><%= link_to "Clear", busy_intervals_destroy_all_path, data: {confirm: "This will clear your entire calendar. Are you sure?"}, class: "btn btn-default" %></p>
-</div>
+  <div class="row">
+    <div class="col-sm-12 col-xs-12">
+      <h3>Click on unavailable dates</h3>
+    </div>
+    <div class="col-sm-8 col-xs-12">
+      <div id='calendar'></div>
+      <br>
+    </div>
+    <br>
+    <div class="col-sm-2 col-xs-12">
+      <p><%= link_to 'Import from Google Calendar', oauth_authorize_path, class: "btn btn-default" %></p>
+      <p><%= link_to "Update", root_path, class: "btn btn-default" %></p>
+      <p><%= link_to "Clear", busy_intervals_destroy_all_path, data: {confirm: "This will clear your entire calendar. Are you sure?"}, class: "btn btn-default" %></p>
+    </div>
+  </div>
 </div>
