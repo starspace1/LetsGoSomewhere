@@ -11,7 +11,7 @@
 
   <body>
 
-    <%= render 'layouts/navigation' %>
+    <%= render 'layouts/navigation' unless @hide_navbar %>
 
     <div id="main-container" class="container">
       <div class="row">

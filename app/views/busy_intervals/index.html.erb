@@ -1,4 +1,5 @@
 <!-- TODO add ability to click and drag to select multiple busy dates -->
+<div class="blacky container">
 <div class="col-sm-12">
   <h3>Click on unavailable dates</h3>
 </div>
@@ -9,4 +10,5 @@
   <p><%= link_to 'Import from Google Calendar', oauth_authorize_path, class: "btn btn-default" %></p>
   <p><%= link_to "Update", root_path, class: "btn btn-default" %></p>
   <p><%= link_to "Clear", busy_intervals_destroy_all_path, data: {confirm: "This will clear your entire calendar. Are you sure?"}, class: "btn btn-default" %></p>
+</div>
 </div>

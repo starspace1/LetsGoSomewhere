@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root 'trips#index'
+  root 'static#index'
 
   resources :busy_intervals, only: [:index, :create, :edit, :destroy]
   get 'busy_intervals/import'
@@ -30,6 +30,8 @@ Rails.application.routes.draw do
     post   'login'  => :create
     delete 'logout' => :destroy
   end
+
+  get 'about' => 'static#about', as: "about"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

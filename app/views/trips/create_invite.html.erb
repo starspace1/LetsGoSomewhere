@@ -1,12 +1,12 @@
 <!-- TODO make sure there are labels for every form input -->
-<div class="form-group">
-  <%= form_tag(trip_invite_path(@trip), method: :post) do %>
-  <fieldset>
-    <legend>Invite a friend!</legend>
-      <%= label_tag :email, 'Email:' %>
-      <%= text_field_tag :email, params[:email], class: "form-control" %><br>
-      <%= submit_tag "Send", class: "btn btn-default" %>
-      <%= link_to "Back", trip_path(@trip), class: "btn btn-default" %>
-  </fieldset>
-  <% end %>
+<div class="blacky container">
+  <div class="form-group">
+    <h2>Invite a friend!</h2>
+    <%= form_tag(trip_invite_path(@trip), method: :post) do %>
+        <%= label_tag :email, 'Email:' %>
+        <%= text_field_tag :email, params[:email], class: "form-control" %><br>
+        <%= submit_tag "Send", class: "btn btn-default" %>
+        <%= link_to "Back", trip_path(@trip), class: "btn btn-default" %>
+    <% end %>
+  </div>
 </div>

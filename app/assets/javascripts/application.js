@@ -58,9 +58,9 @@ $(document).on('ready page:load', function() {
 
         container: $('#world-map'),
 
-        markersSelectable: true,
+        backgroundColor: "transparent",
 
-        regionsSelectable: true,
+        markersSelectable: true,
 
         markerStyle: {
           initial: {
