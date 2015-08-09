@@ -8,6 +8,9 @@ class StaticController < ApplicationController
     else
       @hide_navbar = true
     end
-    
   end
+
+  def about
+  end
+
 end
