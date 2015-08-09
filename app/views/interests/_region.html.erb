@@ -1,5 +1,5 @@
 <div class="panel panel-default transparent">
-  <div class="panel-heading">
+  <div id="pnl-hdg" class="panel-heading">
     <h4 class="panel-title">
       <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
       <a class="region-panel-link" data-toggle="collapse" href="#collapse<%=region.gsub(' ','')%>"><%= region %></a>
@@ -8,7 +8,7 @@
   <div id="collapse<%=region.gsub(' ','')%>" class="panel-collapse collapse">
     <div class="panel-body">
       <% Destination.countries(region).each do |country| %>
-        <h5><%= "#{country}: " %></h5>
+        <h4><%= "#{country}: " %></h4>
         <%= render partial: 'country', locals: {country: country} %>
         <br>
       <% end %>
